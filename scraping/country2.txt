@@ -1,0 +1,280 @@
+Afghan
+Albanian
+Algerian
+American
+Andorran
+Angolan
+Antiguan
+Barbudan
+Argentine
+Armenian
+Aruban
+Australian
+Austrian
+Azerbaijani
+Bahamian
+Bahraini
+Bangladeshi
+Barbadian
+Basque
+Belarusian
+Belgian
+Belizean
+Bermudian
+Bolivian
+Bosniak
+Bosnian
+Herzegovinian
+Brazilian
+Breton
+British Virgin Islander
+Bruneian
+Bulgarians
+Macedonian
+Bulgarian
+Macedonian
+Bulgarian
+Burkinabé
+Burundian
+Cambodian
+Cameroonian
+Canadian
+Catalan
+Cape Verdean
+Chaldean
+Chadian
+Chilean
+Colombian
+Comorian
+Costa Rican
+Croat
+Cuban
+Cypriot
+Czech
+Danes
+Greenlander
+Greenlander
+Djiboutian
+Ecuadorian
+Egyptian
+Emirati
+Equatoguinean
+Eritrean
+Estonian
+Ethiopian
+Falkland Islander
+Fijian
+Finn
+Filipino
+French citizen
+Gambian
+Georgian
+Germans
+Baltic German
+Baltic German
+Ghanaian
+Gibraltarian
+Greeks
+Greek Macedonian
+Greek Macedonian
+Grenadian
+Guatemalan
+Guinean
+Guinea-Bissau national
+Haitian
+Honduran
+Hong Konger
+Hungarian
+Icelander
+Indian
+Indonesian
+Iranian
+Iraqi
+Israeli
+Italian
+Ivoirian
+Jamaican
+Jordanian
+Kazakh
+Kenyan
+Korean
+Kosovar
+Kuwaiti
+Kyrgyz
+Latvian
+Liberian
+Libyan
+Liechtensteiner
+Lithuanian
+Luxembourger
+Macedonian
+Malawian
+Malaysian
+Maldivian
+Malian
+Mauritanian
+Mauritian
+Mexican
+Micronesian
+Moldovan
+Mongolian
+Montenegrin
+Moroccan
+Mozambican
+Namibian
+Nauruan
+New Zealander
+Nicaraguan
+Nigerien
+Nigerian
+Norwegian
+Pakistani
+Palauan
+Palestinian
+Panamanian
+Papua New Guinean
+Paraguayan
+Peruvian
+Pole
+Puerto Rican
+Quebecer
+Réunionnai
+Romanian
+Russians
+Baltic Russian
+Baltic Russian
+Rwandan
+Saint Kitts and Nevi
+Saint Lucian
+Salvadoran
+Samoan
+Saudi
+Scot
+Serb
+Seychelloi
+Sierra Leonean
+Singaporean
+Slovak
+Slovene
+Solomon Islander
+Somali
+Somalilander
+South African
+Spaniard
+Sri Lankan
+Swede
+Swis
+Syriac
+Syrian
+Tamil
+Tanzanian
+Thai
+Tibetan
+Tobagonian
+Tongan
+Trinidadian
+Tunisian
+Turk
+Tuvaluan
+Ugandan
+Ukrainian
+Uruguayan
+Uzbek
+Vanuatuan
+Venezuelan
+Vincentian
+Yemeni
+Zambian
+Zimbabwean
+azerbaijan
+algeria
+angola
+benin
+botswana
+burkina faso
+burundi
+cameroon
+cape verde
+central african republic
+chad
+comoros
+congo
+congo, democratic republic of
+côte d'ivoire
+djibouti
+egypt
+equatorial guinea
+eritrea
+ethiopia
+gabon
+gambia
+ghana
+guinea
+guinea-bissau
+kenya
+lesotho
+liberia
+libyan arab jamahiriya
+madagascar
+malawi
+mali
+mauritania
+mauritius
+mayotte
+morocco
+mozambique
+namibia
+niger
+nigeria
+reunion
+rwanda
+saint helena
+sao tome and principe
+senegal
+seychelles
+sierra leone
+somalia
+south africa
+south sudan
+sudan
+eswatini, formerly known as swaziland
+tanzania
+togo
+tunisia
+uganda
+western sahara
+zambia
+zimbabwe
+country name
+antarctica
+bouvet island
+french southern territories
+heard island and mcdonald islands
+south georgia and the south sandwich islands
+country name
+american samoa
+australia
+cook islands
+fiji
+french polynesia
+guam
+kiribati
+marshall islands
+micronesia
+nauru
+new caledonia
+new zealand
+niue
+norfolk island
+northern mariana islands
+palau
+papua new guinea
+pitcairn islands
+samoa
+solomon islands
+tokelau
+tonga, kingdom of
+tuvalu
+united states minor outlying islands
+vanuatu
+wallis and futuna

@@ -1,0 +1,250 @@
+azerbaijan
+algeria
+angola
+benin
+botswana
+burkina faso
+burundi
+cameroon
+cape verde
+central african republic
+chad
+comoros
+congo
+congo, democratic republic of
+côte d'ivoire
+djibouti
+egypt
+equatorial guinea
+eritrea
+ethiopia
+gabon
+gambia
+ghana
+guinea
+guinea-bissau
+kenya
+lesotho
+liberia
+libyan arab jamahiriya
+madagascar
+malawi
+mali
+mauritania
+mauritius
+mayotte
+morocco
+mozambique
+namibia
+niger
+nigeria
+reunion
+rwanda
+saint helena
+sao tome and principe
+senegal
+seychelles
+sierra leone
+somalia
+south africa
+south sudan
+sudan
+eswatini, formerly known as swaziland
+tanzania
+togo
+tunisia
+uganda
+western sahara
+zambia
+zimbabwe
+country name
+antarctica
+bouvet island
+french southern territories
+heard island and mcdonald islands
+south georgia and the south sandwich islands
+country name
+american samoa
+australia
+cook islands
+fiji
+french polynesia
+guam
+kiribati
+marshall islands
+micronesia
+nauru
+new caledonia
+new zealand
+niue
+norfolk island
+northern mariana islands
+palau
+papua new guinea
+pitcairn islands
+samoa
+solomon islands
+tokelau
+tonga, kingdom of
+tuvalu
+united states minor outlying islands
+vanuatu
+wallis and futuna
+country name
+afghanistan
+azerbaijan
+bahrain
+bangladesh
+bhutan
+british indian ocean territory
+brunei darussalam
+cambodia
+china, people's republic of
+christmas island
+cocos (keeling) islands
+cyprus
+georgia
+hong kong
+india
+indonesia
+iran, islamic republic of
+iraq
+israel
+japan
+jordan
+kazakhstan
+korea, democratic people's republic of
+korea, republic of
+kuwait
+kyrgyzstan
+lao people's democratic republic
+lebanon
+macao
+malaysia
+maldives
+mongolia
+myanmar
+nepal
+oman
+pakistan
+palestinian territory
+philippines
+qatar
+saudi arabia
+singapore
+sri lanka
+syrian arab republic
+taiwan
+tajikistan
+thailand
+timor-leste
+turkey
+turkmenistan
+united arab emirates
+uzbekistan
+vietnam
+yemen
+country name
+aland islands
+albania
+andorra
+armenia
+austria
+belarus
+belgium
+bosnia and herzegovina
+bulgaria, republic of
+croatia
+czech republic (czechia)
+denmark
+estonia
+faroe islands
+finland
+france
+germany
+gibraltar
+greece
+guernsey
+holy see (vatican city state)
+hungary
+iceland
+ireland
+isle of man
+italy
+jersey
+latvia
+liechtenstein
+lithuania
+luxembourg
+republic of north macedonia
+malta
+moldova
+monaco
+montenegro
+netherlands
+norway
+poland
+portugal
+romania
+russian federation
+san marino
+serbia
+slovakia (slovak republic)
+slovenia
+spanish
+svalbard & jan mayen islands
+sweden
+switzerland
+ukraine
+united kingdom
+country name
+anguilla
+aruba
+bonaire, sint eustatius and saba
+canada
+cuba
+curaçao
+dominica
+dominican republic
+el salvador
+greenland
+grenada
+guadeloupe
+guatemala
+haiti
+honduras
+jamaica
+martinique
+mexico
+montserrat
+netherlands antilles
+nicaragua
+panama
+puerto rico
+saint barthelemy
+saint kitts and nevis
+saint lucia
+saint martin
+saint pierre and miquelon
+saint vincent and the grenadines
+sint maarten (netherlands)
+trinidad and tobago
+turks and caicos islands
+united states minor outlying islands
+united states of america
+united states virgin islands
+country name
+argentina
+bolivia
+brazil
+chile
+colombia
+ecuador
+falkland islands (malvinas)
+french guiana
+guyana
+paraguay
+peru
+suriname
+uruguay
+venezuela
