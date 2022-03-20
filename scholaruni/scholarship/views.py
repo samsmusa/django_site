@@ -1,6 +1,3 @@
-
-# import plotly.express as px
-# from plotly.offline import plot
 import pandas as pd
 from multiprocessing import context
 from django.http import request
