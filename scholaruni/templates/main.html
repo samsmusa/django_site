@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta %}
+    
+    {% endblock meta %}
+    <title>{% block title %}{% endblock title %}</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VS9V9DLDE"></script>
+  <script src="{% static 'popper.min.js'%}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <link rel="icon" href="{% static 'logo/logo-sm.png'%}" type="image/icon type">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+  </head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="HMIhlITI"></script>
+    {% block main %}
+
+
+    {% block navbar %}
+        {% comment %} navbar block  {% endcomment %}
+    {% endblock navbar %}
+
+    {% block carusel %}
+        {% comment %} navbar carusel  {% endcomment %}
+    {% endblock carusel %}
+
+      
+    
+
+      {% block content %}
+      
+        {% comment %} blcok content  {% endcomment %}
+      {% endblock content %}
+
+    
+    
+
+
+      
+    {% endblock main %}
+
+
+    {% block footer %}
+      {% comment %} block footer  {% endcomment %}
+    {% endblock footer %}
+
+    
+  <script src="{% static 'js/myjs.js'%}"></script>
+  
+
+</body>
+
+</html>

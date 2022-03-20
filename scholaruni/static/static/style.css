@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap');
+:root {
+    /* Not my favorite that line-height has to be united, but needed */
+    --lh: 1.4rem;
+    --theme: #f95c39;  
+    /* --theme: rgb(1, 47, 47);   */
+    --line: #f95c39;
+    --footer: #e23109;
+    /* --line: rgba(1, 47, 47, 0.849); */
+    --border: rgba(1, 47, 47, 0.178);
+    --button: rgba(1, 47, 47, 0.555);
+    /* --theme: rgb(83, 143, 143); */
+    /* --white: #ffffff;  */
+
+  }
+
+* {
+    font-family: 'Poppins', sans-serif !important
+  }
+
+.custom-container {
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+/* box title  */
+.title-text {
+    
+    width: 100%; 
+    border-bottom: 1px solid var(--line) !important;
+    line-height: 0.5em;
+    margin: 10px 0 0px 0; 
+ } 
+ 
+.title-text span { 
+     /* background:rgb(136, 124, 241); 
+     padding:0 10px;  */
+     color:var(--theme);
+ }
+
+ /* end box title  */
+
+
+
+
+
+
+/* article */
+
+ .article p, .article h2, .article h3 {
+    padding: 0px 0 20px 0;
+    line-height: 1.6;
+} 
+
+.article a {
+    color: rgb(22, 84, 255);
+}
+
+.article h2, .article h3{
+    color: rgb(48, 152, 161);
+}
+
+/* end article */
+
+
+
+/* .navbar */
+.navlink {
+    color: var(--theme);
+}
+
+.search-btn {
+    background-color:var(--theme) ;
+    color: aliceblue;
+}
+
+.search-btn:hover {
+    background-color: aliceblue;
+    color: var(--theme);
+}
+
+/* colr clss  */
+.color {
+    color: var(--theme);
+}
+.bg-color {
+    background-color: var(--theme) !important;
+}
+.footer-bg-color {
+    background-color: var(--footer) !important;
+}
+
+/* end color class  */
+/* end navbar  */
+
+
+/* footer  */
+
+.footer-terms {
+    font-size: 12px !important;
+}
+
+.footer-list {
+
+    font-size: 12px;
+    font-weight: 600;
+}
+/* .footer,.navbar {
+    background-color: var(--theme) !important;
+    color: aliceblue !important;
+} */
+/* end footer  */
+
+ /* card  */
+
+ .card {
+    border-color: var(--border) !important;
+}
+ .card-frow {
+    background-color: #f3f3f3!important;
+    color:var(--theme) !important;
+    border: 1px solid #eccbcb !important;
+    /* box-shadow: ; */
+}
+
+.card-frow:hover {
+   /* border-color: var(--border) !important; */
+   border: 1px solid var(--theme) !important;
+}
+.cb {
+    /* border: none !important ; */
+    padding-top: 5px !important ;
+    padding-bottom: 5px !important ;
+}
+.card-header, .card-footer {
+    border: none !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    background-color:rgba(255, 255, 240, 0) !important;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    
+}
+
+.cb2 {
+    /* border: none !important; */
+}
+
+.date-card {
+    padding: 0px !important;
+    margin:0px !important;
+    font-size: 13px;
+}
+
+
+.card-text {
+    margin: 0px !important;
+    font-size: 14px;
+}
+
+.card-frow-text {
+    color: var(--theme) !important;
+}
+
+/* end card  */
+
+
+/* btn  */
+.btn-custom:hover {
+    background-color:rgba(255, 255, 255, 0) !important;
+    color: var(--theme);
+}
+.btn-custom {
+    border-color:rgba(250, 250, 248, 0) !important;
+    text-decoration: underline;
+}
+.submit-btn {
+    background-color: var(--theme) ;
+    color: aliceblue;
+}
+.submit-btn:hover {
+    /* background-color: var(--theme) ; */
+    color: aliceblue;
+}
+
+
+/* end button  */
+
+
+/* form control  */
+
+
+.form-control:focus {
+    border-color: var(--theme);
+    box-shadow: 0 1px 1px var(--theme) inset;
+    /* , 0 0 8px var(--theme); */
+    outline: 0 none;
+}
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  
+}
+.foorm {
+    /* right: 100px; */
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+ /* trending  */
+.tred {
+    font-size: 10px;
+    margin-bottom: 0;
+    color: var(--theme);
+}
+
+/* end trending  */
+
+/* carusel  */
+
+
+.car-img {
+    z-index: 70;
+}
+
+.carousel-text{
+    position: absolute;
+    z-index: 80;
+    margin: auto;
+    color: aliceblue;
+    top: 200px;
+    font-size:2.5vw;
+    text-align: center;
+
+    /* right: 50%; */
+    /* right: 0; */
+    
+    /* top: 20%; */
+     /* Adjust this value to move the positioned div up and down */
+    /* text-align: center; */
+    /* width: 60%; Set the width of the positioned div */ */
+}
+
+
+/* align icon */
+
+
+
+
+@media screen and (min-width: 578px) {
+    .side {
+        width: 80px !important;
+    }
+    
+    
+    
+  }
+@media screen and (max-width: 578px) {
+    .carousel-text{
+        position: absolute;
+        z-index: 80;
+        margin: auto;
+        color: aliceblue;
+        top: 120px;
+    }
+    
+  }

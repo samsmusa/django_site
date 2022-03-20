@@ -1,0 +1,127 @@
+{% extends 'main.html' %}
+    {% block title %}Contact | Us{% endblock title %}
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock navbar %}
+
+    <!-- end navbar and navigation  -->
+
+    {% block content %}
+    <section class="container">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-6  col-sm-12">
+                 <div class="mt-4">
+                     <h2>How can we help?</h2>
+                     <p>
+                      Please select a topic below related to your inquiry.
+                      if you don't find what you need fill out our contact 
+                      form.or you can mail us at <strong class="color">info@scholaruni.com</strong>
+                     </p>
+
+
+                     <!-- accortiong  -->
+                     <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What we do
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong><strong class="color">scholaruni</strong> provides useful insights on how to find scholarships in countries like the US, Canada and across Europe. We also provide information for students who are looking for information about tuition and scholarships for universities around the world.
+                            </strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Why we do it
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong> The most important responsibilities of the <strong class="color"> scholaruni </strong>include granting scholarships, promoting the international activities of  universities and research organizations, strengthening  cultural and language studies abroad and helping developing countries establish productive higher education institutions.</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Why should you join
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- end accortiong  -->
+                 </div>
+                  </p>
+
+              </div>
+
+
+              <div class="col-md-6  col-sm-12">
+                  <!-- Wrapper container -->
+                  <div class="container py-4 shadow mt-4">
+
+                      <!-- Bootstrap 5 starter form -->
+                      <form id="contactForm" method="POST">
+                        {% csrf_token %}
+
+                          <!-- Name input -->
+                          <div class="mb-3">
+                              <label class="form-label" for="name">Name</label>
+                              {{form.name}}
+                          </div>
+                          <!-- subject input -->
+                          <div class="mb-3">
+                              <label class="form-label" for="subject">Subject</label>
+                              {{form.subject}}
+                          </div>
+
+                          <!-- Email address input -->
+                          <div class="mb-3">
+                              <label class="form-label" for="email">Email Address</label>
+                              {{form.email}}
+                          </div>
+
+                          <!-- Message input -->
+                          <div class="mb-3">
+                              <label class="form-label" for="body">Message</label>
+                              {{form.body}}
+                          </div>
+
+                          <!-- Form submit button -->
+                          <div class="d-grid">
+                              <button class="btn submit-btn " type="submit">Submit</button>
+                          </div>
+
+                      </form>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </section>
+    
+    
+    {% endblock content %}
+
+
+
+
+    <!-- footer  -->
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
+</body>
+
+</html>

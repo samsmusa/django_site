@@ -1,0 +1,31 @@
+{% load static %}
+  <div class="col-md-3 col-sm-12 ">
+    <!-- <div class="position-absolute top-10 start-100 "> -->
+    <div class="">
+      <div class="pt-5">
+        <p class="title-text mb-5 mt-5 pb-3 border-bottom kb"><span class="px-3 fs-4"> Get touch with us <img src="{% static 'logo/svg/connect.svg'%}" alt="" srcset="" height="30px">
+          </span></p>
+      </div>
+      <div class="mt-2 pt-2">
+
+        <p>Get Exclusive Latest Opportunities That I Only Share With Email Subscribers.</p>
+      </div>
+
+      <form class="" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"><img src="{% static 'logo/svg/email-message-letter-envelope-svgrepo-com.svg'%}" alt="" srcset="" height="20px"></span>
+            {{form.email}}
+          </div>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+
+        <button type="submit" class="btn submit-btn">Submit</button>
+      </form>
+    </div>
+    <!-- </div> -->
+
+
+  </div>

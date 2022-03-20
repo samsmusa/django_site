@@ -1,0 +1,45 @@
+<!-- footer  -->
+ <!-- footer  -->
+ {% include 'termscond.html' %}
+ <footer class="mt-auto bg-light footer bg-color">
+  <div class="d-flex flex-column bd-highlight mt-2 text-center">
+      <div class="d-flex flex-row bd-highlight justify-content-around">
+          <div>
+              <p class="fs-6 text-white mb-0">Links</p>
+              <ul class="list-unstyled footer-list">
+                  <li><a class="text-none text-dark" href="{% url 'home' %}">Home</a></li>
+                  <li><a class="text-none text-dark" href="{% url 'about' %}">About us</a></li>
+                  <li><a class="text-none text-dark" href="{% url 'contact' %}">Contact us</a></li>
+              </ul>
+          </div>
+          <div>
+              <p class="fs-6 text-white mb-0">Popular Links</p>
+              <ul class="list-unstyled footer-list">
+                  <li><a class="text-none text-dark" href="{% url 'scholarships' %}">Scholarship</a></li>
+                  <li><a class="text-none text-dark" href="{% url 'internships' %}">Internship</a></li>
+              </ul>
+          </div>
+          <div>
+              <p class="fs-6 text-white mb-0">Follow Us</p>
+              <div>
+                  <strong><a class="text-none mx-2 text-dark" href="https://www.facebook.com/Scholaruni-106193131997924" target="_blank"><i class="bi fs-4 bi-facebook"></i></a></strong>
+                  <strong><a class="text-none mx-2 text-dark" href="https://www.facebook.com/groups/904226213585740" target="_blank"><i class="bi fs-4 bi-people-fill"></i></a></strong>
+                  <strong><a class="text-none mx-2 text-dark" href="https://t.me/+6mfqmij5mVhkNTNl" target="_blank"><i class="bi fs-4 bi-telegram"></i></i></a></strong>
+              </div>
+          </div>
+      </div>
+      <div
+          class="d-flex flex-column align-items-center flex-md-row justify-content-between footer-bg-color  text-center border-top border-light">
+          <p class="text-white mx-5 my-2"> &copy; scholaruni all rights reserve </p>
+          <div class="mx-3 d-flex flex-row footer-terms">
+              <p class="m-2"><a type="button" data-bs-toggle="modal" data-bs-target="#termscondintion">Terms and Conditions</a></p>
+              <p class="m-2">·</p>
+              <p class="m-2"><a type="button" data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</a></p>
+              <p class="m-2">·</p>
+              <p class="m-2"><a type="button" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <!-- end footer  -->

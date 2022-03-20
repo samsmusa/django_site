@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="col-sm-auto bg-light sticky-top side">
+    <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+        <a href="/" class=" p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+            <img src="{% static 'logo/logo-sm.png'%}" alt="" srcset="">
+        </a>
+        <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+            <li class="nav-item">
+                <a href="#" class="d-none d-sm-block nav-link navlink py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                    <i class="bi-house fs-4"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'contact'%}" class=" d-none d-sm-block nav-link navlink py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                    <i class="bi bi-headset fs-4"></i>
+                </a>
+            </li>
+            
+        </ul>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bank h2 color"></i></i>
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+                <li><a class="dropdown-item" href="{% url 'scholarships' %}">Scholarship</a></li>
+                <li><a class="dropdown-item" href="{% url 'internships' %}">Internship</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
