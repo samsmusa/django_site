@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Internship, Scholarships, Message, Subscriptions
+from .models import Internship, Scholarships, Message, Subscriptions, Tags
 
 class MessageAdmin(admin.ModelAdmin):
     list_display = ('name','email','subject','is_read')
@@ -15,4 +15,5 @@ class InternshipAdmin(admin.ModelAdmin):
 admin.site.register(Scholarships,ScholarshipAdmin)
 admin.site.register(Internship,InternshipAdmin)
 admin.site.register(Message,MessageAdmin)
-admin.site.register(Subscriptions,SubscriptionAdmin)
+admin.site.register(Subscriptions,SubscriptionAdmin)  
+admin.site.register(Tags)  
