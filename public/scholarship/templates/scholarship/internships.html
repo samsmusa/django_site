@@ -1,0 +1,128 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% load custom_tags %}
+{% block meta %}
+<meta name="description"
+    content="Scholarship and Intership Program in 2022 all over the world.paid Internship and Non-paid intership Scholaruni provied all." />
+<meta name="keywords"
+    content="Internship 2022, paid Internship, un-paid Internship, non-paid internship, international internship">
+
+{% endblock meta %}
+{% block title %}ScholarUni | Internships{% endblock title %}
+{% block main %}
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock navbar %}
+
+{% block carusel %}
+{% include "carusel.html" %}
+{% endblock carusel %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.extra_tags }} text-center alert-dismissible fade show w-50 position-absolute top-0 start-50 translate-middle-x sticky-top"
+    role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+{% block content %}
+
+
+<section class="container">
+  <div class="container-fluid">
+
+    <!-- 2 row first row -->
+    <div class="row">
+
+
+
+
+      <div class="row">
+
+        <!-- card row -->
+        <div class="col-md-9  col-sm-12">
+
+          <div class="d-flex  justify-content-center pb-0">
+            <h2 class=" mb-2 title-text mt-5 pb-3 border-bottom border-dark kb"><span class="px-3"><i class="fa-solid fa-briefcase text-dark"></i> Internships</span>
+            </h2>
+          </div>
+
+
+          <!-- scholar card  -->
+          <div class="row">
+            {% for interncard in internship_row %}
+
+            <div class="col-md-6 col-12 gy-2 g-md-4">
+              <a href="{% url 'intern_blog' interncard.slug %}">
+                <div class="card d-flex flex-row cb2 border h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <p class="card-text fw-bold">{{interncard.title}}.</p>
+                    <div class="footer-card">
+                      <div class="d-flex my-auto">
+                        <span class="py-1 d-flex align-items-center"><i class="fa-regular d-block fa-clock"
+                            style="font-size:16px;"></i> <i class="ms-1 d-block">{{interncard.publish_date}}</i></span>
+                      </div>
+                      <div class="my-auto">
+                        {% with ''|center:interncard.star as range %}
+                        {% for _ in range %}
+                        <i class="fa-solid fa-star text-warning"></i>
+                        {% endfor %}
+                        {% endwith %}
+
+                        {% with interncard.star|regularStar:5 as range %}
+                        {% for _ in range %}
+                        <i class="fa-regular fa-star text-warning"></i>
+                        {% endfor %}
+                        {% endwith %}
+                        <i class="fa-solid fa-briefcase text-dark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+            {% endfor %}
+
+            <div class="col-md-12 col-12 gy-2 g-md-4">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  {% if internship_row.has_previous %}
+                  <li class="page-item" >
+                    
+                    <a href="?page={{ internship_row.previous_page_number }}" class="page-link" style="color:#f95c39;">Previous</a>
+                    
+                  </li>
+                  {% endif %}
+                  {% with ''|center:internship_row.paginator.num_pages as range %}
+                  {% for _ in range %}
+                  <li class="page-item {% if internship_row.number == forloop.counter %} pactive {% endif %} "><a class="page-link {% if internship_row.number == forloop.counter %} pactive text-light {% endif %}" href="?page={{forloop.counter}}" style="{% if internship_row.number == forloop.counter %} {% else %} color:#f95c39 {% endif %}">{{forloop.counter}}</a></li>
+                  {% endfor %}
+                  {% endwith %}
+                  {% if internship_row.has_next %}
+                  <li class="page-item">
+                    <a class="page-link" href="?page={{ internship_row.next_page_number }}" style="color:#f95c39">Next</a>
+                  </li>
+                  {% endif %}
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        {% include "sidebar.html" %}
+      </div>
+    </div>
+</section>
+{% endblock content %}
+{% endblock main %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}

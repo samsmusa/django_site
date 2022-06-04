@@ -1,0 +1,112 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block meta %}
+<meta name="description"
+    content="Scholarship and Intership Program in 2022 all over the world.paid Internship and Non-paid intership Scholaruni provied all." />
+<meta name="keywords"
+    content="Internship 2022, paid Internship, un-paid Internship, non-paid internship, international internship">
+
+{% endblock meta %}
+{% block title %}ScholarUni | Internships{% endblock title %}
+{% block main %}
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock navbar %}
+
+{% block carusel %}
+{% include "carusel.html" %}
+{% endblock carusel %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.extra_tags }} text-center alert-dismissible fade show w-50 position-absolute top-0 start-50 translate-middle-x sticky-top"
+    role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+{% block content %}
+
+
+<section class="custom-container">
+    <div class="container-fluid">
+
+        <!-- 2 row first row -->
+        <div class="row">
+
+
+
+
+            <div class="row">
+
+                <!-- card row -->
+                <div class="col-md-9  col-sm-12">
+
+                    <div class="d-flex  justify-content-center pb-0">
+                        <h2 class=" mb-2 title-text mt-5 pb-3 border-bottom border-dark kb"><span class="px-3"><img
+                                    src="{% static 'logo/svg/square-academic-cap-svgrepo-com.svg'%}" alt="" srcset=""
+                                    height="50px">Internships</span>
+                        </h2>
+                    </div>
+
+
+                    <!-- scholar card  -->
+                    <div class="row">
+                        {% for interncard in internship_row %}
+
+                        <div class="col-md-6 col-12 gy-2 g-md-4">
+                            <a href="{% url 'intern_blog' interncard.slug %}">
+                                <div class="card d-flex flex-row cb2 border">
+                                    <div class="card-body d-block flex-columnp">
+                                        <p class="card-text fw-bold">{{interncard.title}}.</p>
+                                        <div class="footer-card">
+                                            <div class="d-flex my-auto">
+                                                <img class="pb-1" src="{% static 'logo/svg/stopwatch-svgrepo-com.svg'%}"
+                                                    alt="" srcset="">
+                                                <span class="py-1">{{interncard.publish_date}}</span>
+                                            </div>
+                                            <div class="my-auto">
+                                                {% with ''|center:interncard.star as range %}
+                                                {% for _ in range %}
+                                                <img src="{% static 'logo/svg/badge-favorite-rating-star-svgrepo-com.svg' %}"
+                                                    alt="" height="15px">
+                                                {% endfor %}
+                                                {% endwith %}
+                                                <img src="{% static 'logo/svg/intern.svg'%}" alt="" height="20px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="{{interncard.feature_image.url}}" alt="" srcset="" style="width: 100px;">
+                                </div>
+
+                            </a>
+                        </div>
+                        {% endfor %}
+
+                        {% comment %} see more button {% endcomment %}
+                        <div class="col-md-12 col-12 gy-2 g-md-4">
+                            <div class="d-grid gap-2">
+                                <a class="btn-custom text-center" type="button"> See more <img
+                                        src="{% static 'logo/svg/in-administration-control-edit-option-setting-svgrepo-com.svg'%}"
+                                        alt="" srcset=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                {% include "sidebar.html" %}
+            </div>
+        </div>
+</section>
+{% endblock content %}
+{% endblock main %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}

@@ -1,0 +1,440 @@
+afghan
+albanian
+algerian
+american
+andorran
+angolan
+antiguans
+barbudan
+argentine
+armenian
+aruban
+australian
+austrian
+azerbaijani
+bahamian
+bahraini
+bangladeshi
+barbadian
+basque
+belarusian
+belgian
+belizean
+bermudian
+bolivian
+bosniak
+bosnians
+herzegovinian
+brazilian
+breton
+british virgin islander
+bruneian
+bulgarian
+macedonian
+bulgarian
+macedonian
+bulgarian
+burkinabé
+burundian
+cambodian
+cameroonian
+canadian
+catalan
+cape verdean
+chaldean
+chadian
+chilean
+colombian
+comorian
+costa rican
+croat
+cuban
+cypriot
+czech
+danes
+greenlander
+greenlander
+djiboutian
+ecuadorian
+egyptian
+emirati
+equatoguinean
+eritrean
+estonian
+ethiopian
+falkland islander
+fijian
+finn
+filipino
+french citizen
+gambian
+georgian
+german
+baltic german
+baltic german
+ghanaian
+gibraltarian
+greek
+greek macedonian
+greek macedonian
+grenadian
+guatemalan
+guinean
+guinea-bissau national
+haitian
+honduran
+hong konger
+hungarian
+icelander
+indian
+indonesian
+iranian
+iraqi
+israeli
+italian
+italy
+ivoirian
+jamaican
+jordanian
+kazakh
+kenyan
+korean
+kosovar
+kuwaiti
+kyrgyz
+latvian
+liberian
+libyan
+liechtensteiner
+lithuanian
+luxembourger
+macedonian
+malawian
+malaysian
+maldivian
+malian
+mauritanian
+mauritian
+mexican
+micronesian
+moldovan
+mongolian
+montenegrin
+moroccan
+mozambican
+namibian
+nauruan
+new zealander
+nicaraguan
+nigerien
+nigerian
+norwegian
+pakistani
+palauan
+palestinian
+panamanian
+papua new guinean
+paraguayan
+peruvian
+pole
+puerto rican
+quebecer
+réunionnai
+romanian
+russia
+russian
+baltic 
+russian
+baltic russian
+rwandan
+saint kitts and nevi
+saint lucian
+salvadoran
+samoan
+saudi
+scot
+serb
+seychelloi
+sierra leonean
+singaporean
+slovak
+slovene
+solomon islander
+somali
+somalilander
+south african
+spaniard
+sri lankan
+swedes
+swis
+syriac
+syrian
+tamil
+tanzanian
+thai
+tibetan
+tobagonian
+tongan
+trinidadian
+tunisian
+turkish
+turkey
+tuvaluan
+ugandan
+ukrainian
+uruguayan
+uzbek
+vanuatuan
+venezuelan
+vincentian
+yemeni
+zambian
+zimbabwean
+azerbaijan
+algeria
+angola
+benin
+botswana
+burkina faso
+burundi
+cameroon
+cape verde
+central african republic
+chad
+comoros
+congo
+congo, democratic republic of
+côte d'ivoire
+djibouti
+egypt
+equatorial guinea
+eritrea
+ethiopia
+gabon
+gambia
+ghana
+guinea
+guinea-bissau
+kenya
+lesotho
+liberia
+libyan
+jamahiriya
+madagascar
+malawi
+mali
+mauritania
+mauritius
+mayotte
+morocco
+mozambique
+namibia
+niger
+nigeria
+reunion
+rwanda
+saint helena
+sao tome and principe
+senegal
+seychelles
+sierra leone
+somalia
+south africa
+south sudan
+sudan
+eswatini, formerly known as swaziland
+tanzania
+togo
+tunisia
+uganda
+western sahara
+zambia
+zimbabwe
+antarctica
+bouvet island
+french southern territories
+heard island and mcdonald islands
+georgia
+sandwich island
+american samoa
+australia
+cook islands
+fiji
+french polynesia
+guam
+kiribati
+marshall islands
+micronesia
+nauru
+new caledonia
+new zealand
+niue
+norfolk island
+northern mariana islands
+palau
+papua new guinea
+pitcairn islands
+samoa
+solomon islands
+tokelau
+tonga, kingdom of
+tuvalu
+united states minor outlying islands
+vanuatu
+wallis and futuna
+afghanistan
+azerbaijan
+bahrain
+bangladesh
+bhutan
+british indian ocean territory
+brunei darussalam
+cambodia
+china, people's republic of
+christmas island
+cocos (keeling) islands
+cyprus
+georgia
+hong kong
+india
+indonesia
+iran, islamic republic of
+iraq
+israel
+japan
+jordan
+kazakhstan
+korea, democratic people's republic of
+korea, republic of
+kuwait
+kyrgyzstan
+lao people's democratic republic
+lebanon
+macao
+malaysia
+maldives
+mongolia
+myanmar
+nepal
+oman
+pakistan
+palestinian territory
+philippines
+qatar
+saudi arabia
+singapore
+sri lanka
+syrian arab republic
+taiwan
+tajikistan
+thailand
+timor-leste
+turkey
+turkmenistan
+united arab emirates
+uae
+uzbekistan
+vietnam
+yemen
+aland islands
+albania
+andorra
+armenia
+austria
+belarus
+belgium
+bosnia and herzegovina
+bulgaria, republic of
+croatia
+czech republic (czechia)
+denmark
+estonia
+faroe islands
+finland
+france
+germany
+gibraltar
+greece
+guernsey
+holy see (vatican city state)
+hungary
+iceland
+ireland
+isle of man
+jersey
+latvia
+liechtenstein
+lithuania
+luxembourg
+republic of north macedonia
+malta
+moldova
+monaco
+montenegro
+netherlands
+norway
+poland
+portugal
+romania
+russian federation
+san marino
+serbia
+slovakia (slovak republic)
+slovenia
+spanish
+svalbard & jan mayen islands
+sweden
+switzerland
+ukraine
+united kingdom
+uk
+anguilla
+aruba
+bonaire, sint eustatius and saba
+canada
+cuba
+curaçao
+dominica
+dominican republic
+el salvador
+greenland
+grenada
+guadeloupe
+guatemala
+haiti
+honduras
+jamaica
+martinique
+mexico
+montserrat
+netherlands antilles
+nicaragua
+panama
+puerto rico
+saint barthelemy
+saint kitts and nevis
+saint lucia
+saint martin
+saint pierre and miquelon
+saint vincent and the grenadines
+sint maarten (netherlands)
+trinidad and tobago
+turks and caicos islands
+united states minor outlying islands
+united states of america
+usa
+united states virgin islands
+argentina
+bolivia
+brazil
+chile
+colombia
+ecuador
+falkland islands (malvinas)
+french guiana
+guyana
+paraguay
+peru
+suriname
+uruguay
+venezuela

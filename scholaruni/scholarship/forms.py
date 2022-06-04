@@ -3,6 +3,8 @@ from logging import PlaceHolder
 from django.forms import ModelForm
 from django import forms
 from .models import Message, Subscriptions
+from ckeditor.widgets import CKEditorWidget
+
 
 class MessageForm(ModelForm):
     name = forms.CharField(widget=forms.TextInput(attrs={
@@ -37,3 +39,14 @@ class SubscriptionForm(ModelForm):
     class Meta:
         model = Subscriptions
         fields = ['email']
+        
+        
+        
+class EmailForm(ModelForm):
+    subject = forms.CharField(widget=forms.TextInput(attrs={
+        "class":"form-control","PlaceHolder":"Enter Subject"
+    }))
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+    class Meta:
+        model = Message
+        fields = ['subject','body']

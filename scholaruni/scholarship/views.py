@@ -4,14 +4,22 @@ from django.http import request
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView
+from django.core.paginator import Paginator
+from django.core.mail import send_mail
 
-from .models import Internship, Scholarships
-from .forms import MessageForm, SubscriptionForm
+# from scraping import oppsql, oppsql_intern
+from .models import Internship, Scholarships, Subscriptions, UpdatedSchol, UpdatedIntern
+from .forms import MessageForm, SubscriptionForm, EmailForm
 from django.contrib import messages
 from django.contrib import messages
 from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
 from itertools import chain
 import random
+from scraping.linkgen_intern import linkGenerationIntern 
+from scraping.linkgen import linkGenerationScholarship 
+from scraping import oppsql_intern
+from scraping import oppsql
     
 
 # subscription form validation 
@@ -74,7 +82,6 @@ def HomeView(request):
     intern_df3 = intern_df2.reset_index()
     intern_country = list(intern_df3.countries)
     intern_data_value = list(intern_df3.Internship)
-    print(intern_data_value)
 
 
 
@@ -100,7 +107,10 @@ def HomeView(request):
 
 def ScholarshipView(request):
     form = SubscriptionForm()
-    scholarship_row = Scholarships.objects.all()
+    scholarship = Scholarships.objects.all()
+    paginator = Paginator(scholarship, 6)
+    pageNumber  = request.GET.get('page')
+    scholarship_row = paginator.get_page(pageNumber)
     
     
     subsc(request,'contact')
@@ -116,7 +126,6 @@ def ScholarshipView(request):
 def InternshipView(request):
     form = SubscriptionForm()
     internship_row = Internship.objects.all()
-    
     subsc(request,'contact')
 
 
@@ -128,7 +137,12 @@ def InternshipView(request):
 
 
 
+def blogView(request):
+    return render(request, 'scholarship/blogPage.html', context={})
+    
 
+def BlogDetails(request, slug):
+    return render(request, 'scholarship/blogDetails.html', context={})
     
 
 
@@ -158,6 +172,55 @@ def InternshipDetailView(request,slug):
     return render(request, 'scholarship/blog.html', context=context)
     
 
+
+@login_required(login_url='/admin')
+def dashboard(request):
+    # subscriptions = Subscriptions.objects.all()
+    recpient = list(Subscriptions.objects.values_list('email', flat=True) )
+    
+    if request.method == 'POST':
+        try:
+            if list(request.POST.items())[2][0]=='body':
+                form = EmailForm(request.POST)
+                subject = request.POST['subject']
+                body = request.POST['body']
+                send_mail(
+                    subject,
+                    body,
+                    'info@scholaruni.com',
+                    ['samsmusa@outlook.com'],
+                    fail_silently=True
+                )
+        except:
+            pass
+        
+        try:
+            print('hit')
+            if list(request.POST.items())[1][0] == 'intern':
+                print('hit intern ')
+                linkGenerationIntern()
+                total = oppsql_intern.insertData()
+                UpdatedIntern.objects.create(addPost=total)
+                print("hit success") 
+                
+            if list(request.POST.items())[1][0] == 'schol':
+                linkGenerationScholarship()
+                total = oppsql.insertDataScholarship()
+                UpdatedSchol.objects.create(addPost=total) 
+                print("hit success sc") 
+        except:
+            pass
+    form = EmailForm()
+    subscriptions = Subscriptions.objects.all()
+    updateInternPost = UpdatedIntern.objects.all()
+    updateScholPost = UpdatedSchol.objects.all()
+    context = {
+        'updateInternPost':updateInternPost,
+        'updateScholPost':updateScholPost,
+        'subscriptions': subscriptions,
+        'form':form,
+    }
+    return render(request, 'scholarship/dashboard.html', context=context)
 
 # contac us view 
 def createMessage(request):

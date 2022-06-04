@@ -1,63 +1,71 @@
 {% extends 'main.html' %}
 {% block title %}{{object.slug}}{% endblock title %}
-                    {% block main %}
-                    {% if messages %}
-                        {% for message in messages %}
-                            <div class="alert alert-{{ message.extra_tags }} alert-dismissible text-center fade show w-50 position-absolute top-0 start-50 translate-middle-x" role="alert">
-                                <strong>{{message}}</strong> 
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                    {% block content %}
-                    
-                    {% comment %} blcok content  {% endcomment %}
-                  
-                    <div id="fb-root"></div>
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=2395582627387959&autoLogAppEvents=1" nonce="nfmMDZnG"></script>
-                    
-                    <div class="container-fluid">
-                        <div class="row">
-                            {% include 'navbar_blog.html' %}
+{% block main %}
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock navbar %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.extra_tags }} alert-dismissible text-center fade show w-50 position-absolute top-0 start-50 translate-middle-x"
+    role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+{% block content %}
 
-                            <div class="col-sm px-3 pb-3 min-vh-100">
-                                <!-- content -->
-                                <div class="row">
-                                    <div class="col-md-9  col-sm-12">
+{% comment %} blcok content {% endcomment %}
 
-                                        <div class="mt-5 mb-5 border-bottom title-text">
-                                            <h2 class=" mb-2  pb-3 "><span class="fw-bold">{{object.title}}</span>
-                                            </h2>
-                                            <div class="d-flex flex-row">
-                                                <p class="fs-6 ">by <span class="fw-bold"> scholaruni--</span> </p>
-                                                <p class="">{{object.publish}}</p>
-                                            </div>
-                                        </div>
-                                        <article class="article">
-                                            {{object.post_content | safe}}
-                                        </article>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=2395582627387959&autoLogAppEvents=1"
+    nonce="nfmMDZnG"></script>
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            {% comment %} {% include 'navbar_blog.html' %} {% endcomment %}
 
-                                        <div class="">
+            <div class="col-sm px-3 pb-3 min-vh-100">
+                <!-- content -->
+                <div class="row">
+                    <div class="col-md-9  col-sm-12">
 
-                                            <div class="fb-comments" data-href="http://127.0.0.1:8000/scholarship/{{object.slug}}" data-width="100%" data-numposts="5"></div>
-                                        </div>
-                                    </div>
-                                    {% include 'sidebar.html' %}
-                                </div>
+                        <div class="mt-5 mb-5 border-bottom title-text">
+                            <h2 class=" mb-2  pb-3 "><span class="fw-bold">{{object.title}}</span>
+                            </h2>
+                            <div class="d-flex flex-row">
+                                <p class="fs-6 ">by <span class="fw-bold"> scholaruni--</span> </p>
+                                <p class="">{{object.publish}}</p>
                             </div>
                         </div>
+                        <article class="article">
+                            {{object.post_content | safe}}
+                        </article>
+
+                        <div class="">
+
+                            <div class="fb-comments" data-href="http://127.0.0.1:8000/scholarship/{{object.slug}}"
+                                data-width="100%" data-numposts="5"></div>
+                        </div>
                     </div>
-                    {% endblock content %}
+                    {% include 'sidebar.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
 
-                    
-                    {% if object.has_previous %}
-                        <p class="fs-2">ase ase </p>
-                    {% endif %}
-                        
-                    {% endblock main %}
-                    {% block footer %}
-                    
-                    {% include 'footer.html' %}
-                    {% include 'footer_nav.html' %}
 
-                    {% endblock footer %}
+{% if object.has_previous %}
+<p class="fs-2">ase ase </p>
+{% endif %}
+
+{% endblock main %}
+{% block footer %}
+
+{% include 'footer.html' %}
+{% include 'footer_nav.html' %}
+
+{% endblock footer %}

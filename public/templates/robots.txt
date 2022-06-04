@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /images/
+Allow: /pages/thankyou.html
+Allow: /scholauship/
+Allow: /scholaruni/
+Allow: /static/
+Allow: /templates/

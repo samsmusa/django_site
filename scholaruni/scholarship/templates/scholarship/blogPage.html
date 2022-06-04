@@ -1,0 +1,293 @@
+{% extends 'main.html' %}
+{% load static %}
+{% load custom_tags %}
+{% block title %}
+    ScholarUni | Blog
+{% endblock title %}
+{% block main %}
+    {% block navbar %}
+        {% include "navbar.html" %}
+    {% endblock navbar %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.extra_tags }} text-center alert-dismissible fade show w-50 position-absolute top-0 start-50 translate-middle-x sticky-top"
+                 role="alert">
+                <strong>{{ message }}</strong>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% block content %}
+        <section class="container">
+            <div class="alert  mt-3"
+                 role="alert"
+                 style="background-color:#F4AFA0;
+                        color:black;">
+                A simple primary alert—check it out!
+            </div>
+            <div class="row ">
+                <div class="col-6 ">
+                    <div class="card bg-dark text-white border-0 h-100">
+                        <img src="https://images.unsplash.com/photo-1653922233367-b99f1b9a8af1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                             class="card-img"
+                             style="height:360px;"
+                             alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title"><a href="#">Card title</a></h5>
+                            <p class="card-text border-none">
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="mb-1 card bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                             class="card-img"
+                             style="height:180px;"
+                             alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title"><a href="#">Card title</a></h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-1 card bg-dark text-white border-0">
+                        <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                             class="card-img"
+                             style="height:180px;"
+                             alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title"><a href="#">Card title</a></h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                            </p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert  mt-3"
+                 role="alert"
+                 style="background-color:#F4AFA0;
+                        color:black;">
+                <div class="d-flex flex-row justify-content-between">
+                    <p class="p-0 m-0">ALL BLOG</p>
+                    <div class="d-flex flex-row">
+                        <p class="ps-2 m-0">latest</p>
+                        <p class="ps-2 m-0">popular</p>
+                        <p class="ps-2 m-0">latest</p>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1653585652192-e0420de370b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                     class="card-img-top"
+                                     alt="..."
+                                     style="height:150px;">
+                                <div class="card-body my-1 mx-0 px-0 py-0">
+                                    <div class="d-flex">
+                                        <p class="p-0 m-0">
+                                            <span class="badge bg-success">Germany</span>
+                                        </p>
+                                        <p class="m-0 p-0">
+                                            <span class="badge text-dark">12/03/22</span>
+                                        </p>
+                                    </div>
+                                    <h5 class="card-title p-0 m-0 mt-2"><a href="#">Card title</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1653585652192-e0420de370b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                     class="card-img-top"
+                                     alt="..."
+                                     style="height:150px;">
+                                <div class="card-body my-1 mx-0 px-0 py-0">
+                                    <div class="d-flex">
+                                        <p class="p-0 m-0">
+                                            <span class="badge bg-success">Germany</span>
+                                        </p>
+                                        <p class="m-0 p-0">
+                                            <span class="badge text-dark">12/03/22</span>
+                                        </p>
+                                    </div>
+                                    <h5 class="card-title p-0 m-0 mt-2">C<a href="#">Card title</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1653585652192-e0420de370b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                     class="card-img-top"
+                                     alt="..."
+                                     style="height:150px;">
+                                <div class="card-body my-1 mx-0 px-0 py-0">
+                                    <div class="d-flex">
+                                        <p class="p-0 m-0">
+                                            <span class="badge bg-success">Germany</span>
+                                        </p>
+                                        <p class="m-0 p-0">
+                                            <span class="badge text-dark">12/03/22</span>
+                                        </p>
+                                    </div>
+                                    <h5 class="card-title p-0 m-0 mt-2"><a href="#">Card title</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3" style="background-color:#dcdcdc;">
+                        <div class="col-5 p-3">
+                            <img src="https://images.unsplash.com/photo-1653559260129-d4347e4c8df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-7  justify-content-center align-items-center p-4 " style="font-familly:roboto;">
+                            <p class="fs-3">
+                                world must know
+                            </p>
+                            <p>
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                            </p>
+                            <span class="fs-5 font-monospace text-decoration-underline py-2"><a href="#">Learn More</a></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1653585652192-e0420de370b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                     class="card-img-top"
+                                     alt="..."
+                                     style="height:150px;">
+                                <div class="card-body my-1 mx-0 px-0 py-0">
+                                    <div class="d-flex">
+                                        <p class="p-0 m-0">
+                                            <span class="badge bg-success">Germany</span>
+                                        </p>
+                                        <p class="m-0 p-0">
+                                            <span class="badge text-dark">12/03/22</span>
+                                        </p>
+                                    </div>
+                                    <h5 class="card-title p-0 m-0 mt-2"><a href="#">Card title</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1653585652192-e0420de370b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                     class="card-img-top"
+                                     alt="..."
+                                     style="height:150px;">
+                                <div class="card-body my-1 mx-0 px-0 py-0">
+                                    <div class="d-flex">
+                                        <p class="p-0 m-0">
+                                            <span class="badge bg-success">Germany</span>
+                                        </p>
+                                        <p class="m-0 p-0">
+                                            <span class="badge text-dark">12/03/22</span>
+                                        </p>
+                                    </div>
+                                    <h5 class="card-title p-0 m-0 mt-2"><a href="#">Card title</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card border-0">
+                                <img src="https://images.unsplash.com/photo-1653585652192-e0420de370b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                     class="card-img-top"
+                                     alt="..."
+                                     style="height:150px;">
+                                <div class="card-body my-1 mx-0 px-0 py-0">
+                                    <div class="d-flex">
+                                        <p class="p-0 m-0">
+                                            <span class="badge bg-success">Germany</span>
+                                        </p>
+                                        <p class="m-0 p-0">
+                                            <span class="badge text-dark">12/03/22</span>
+                                        </p>
+                                    </div>
+                                    <h5 class="card-title p-0 m-0 mt-2"><a href="#">Card title</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-12 ">
+                    {% include 'sidebar.html' %}
+                    
+                    <div class="py-4">
+                        <p class="bg-warning">
+                            Lates InternShip
+                        </p>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <a href="#">
+                            <p>
+                                See More...
+                            </p>
+                        </a>
+                    </div>
+                    <div class="py-4">
+                        <p class="bg-warning">
+                            Lates Scholarship
+                        </p>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                        <div class="py-2 m-0 border-bottom">
+                            <p class="p-0 m-0">
+                                hodfj dkfjdkf  dkfjsdkf
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock content %}
+{% endblock main %}
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock footer %}

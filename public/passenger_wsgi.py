@@ -1,0 +1,1 @@
+from scholaruni.wsgi import application

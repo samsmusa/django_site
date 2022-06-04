@@ -1,5 +1,9 @@
 {% extends 'main.html' %}
 {% load static %}
+{% load custom_tags %}
+{% comment %} {% block head %}
+<script src="https://kit.fontawesome.com/a71ad1249e.js" crossorigin="anonymous"></script>
+{% endblock head %} {% endcomment %}
 {% block title %}ScholarUni | Home{% endblock title %}
 {% block main %}
 {% block navbar %}
@@ -10,17 +14,19 @@
 {% include "carusel.html" %}
 {% endblock carusel %}
 {% if messages %}
-  {% for message in messages %}
-      <div class="alert alert-{{ message.extra_tags }} text-center alert-dismissible fade show w-50 position-absolute top-0 start-50 translate-middle-x sticky-top" role="alert">
-          <strong>{{message}}</strong> 
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-  {% endfor %}
-{% endif %}
+{% for message in messages %}
+<div
+  class="alert alert-{{ message.extra_tags }} text-center alert-dismissible fade show w-50 position-absolute top-0 start-50 translate-middle-x sticky-top"
+  role="alert">
+  <strong>{{message}}</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %} 
 {% block content %}
 
 
-<section class="custom-container">
+<section class="container">
   <div class="container-fluid">
     <div class="d-flex  justify-content-left pb-0 mt-2 tred">
       <img src="{% static 'logo/svg/chart-line-svgrepo-com.svg'%}" height="15" width="20">
@@ -33,11 +39,11 @@
       {% for card in first_row_schol %}
       <div class="col-md-4 col-12 gy-3 g-md-4">
         <a href="{% url 'scholar_blog' card.slug %}">
-          <div class="card  h-100  card-frow shadow" >
+          <div class="card  h-100  card-frow shadow">
             <div class="card-header">
-              <img src="{% static 'logo/svg/square-academic-cap-svgrepo-com.svg'%}" alt="" height="25px">
-              <img src="{% static 'logo/svg/check-circle-svgrepo-com.svg' %}" alt="" height="15px">
-              <img src="{% static 'logo/svg/check-protect-protection-security-shield-safe-svgrepo-com.svg' %}" alt="" height="15px">
+              <i class="fa-solid fa-graduation-cap text-dark"></i>
+              <i class="fa-regular fa-circle-check text-dark"></i>
+              <i class="fa-regular fa-lightbulb text-dark"></i>
 
 
             </div>
@@ -48,18 +54,21 @@
             </div>
             <div class="card-footer footer-card">
               <div class="d-flex my-auto">
-                <img class="pb-1" src="{% static 'logo/svg/stopwatch-svgrepo-com.svg'%}" alt="" srcset="">
-                <span class="py-1">{{card.publish_date}}</span>
+                
+                <span class="py-1 d-flex align-items-center"><i class="fa-regular d-block fa-clock" style="font-size:16px;"></i> <i class="ms-1 d-block">{{card.publish_date}}</i></span>
               </div>
               <div class="my-auto">
-                <img class="" src="{% static 'logo/svg/badge-favorite-rating-star-svgrepo-com.svg' %}" alt="" height="15px">
                 {% with ''|center:card.star as range %}
-                  {% for _ in range %}
-                  <img src="{% static 'logo/svg/badge-favorite-rating-star-svgrepo-com.svg' %}" alt="" height="15px">
-                  {% endfor %}
-                  {% endwith %}
-                
-                <img src="{% static 'logo/svg/award-badge-medal-prize-star-winner-svgrepo-com.svg' %}" alt="" height="15px">
+                {% for _ in range %}
+                <i class="fa fa-star"></i>
+                {% endfor %}
+                {% endwith %}
+
+                {% with card.star|regularStar:5 as range %}
+                {% for _ in range %}
+                <i class="fa fa-star-o"></i>
+                {% endfor %}
+                {% endwith %}
               </div>
             </div>
           </div>
@@ -73,11 +82,11 @@
       {% for card in first_row_intern %}
       <div class="col-md-4 col-12 gy-3 g-md-4">
         <a href="{% url 'intern_blog' card.slug %}">
-          <div class="card  h-100  card-frow shadow" >
+          <div class="card  h-100  card-frow shadow">
             <div class="card-header">
-              <img src="{% static 'logo/svg/square-academic-cap-svgrepo-com.svg'%}" alt="" height="25px">
-              <img src="{% static 'logo/svg/check-circle-svgrepo-com.svg' %}" alt="" height="15px">
-              <img src="{% static 'logo/svg/check-protect-protection-security-shield-safe-svgrepo-com.svg' %}" alt="" height="15px">
+              <i class="fa-solid fa-graduation-cap text-dark"></i>
+              <i class="fa-regular fa-circle-check text-dark"></i>
+              <i class="fa-regular fa-lightbulb text-dark"></i>
 
 
             </div>
@@ -88,17 +97,21 @@
             </div>
             <div class="card-footer footer-card">
               <div class="d-flex my-auto">
-                <img class="pb-1" src="{% static 'logo/svg/stopwatch-svgrepo-com.svg'%}" alt="" srcset="">
-                <span class="py-1">{{card.publish_date}}</span>
+                <span class="py-1 d-flex align-items-center"><i class="fa-regular d-block fa-clock" style="font-size:16px;"></i> <i class="ms-1 d-block">{{card.publish_date}}</i></span>
               </div>
               <div class="my-auto">
                 {% with ''|center:card.star as range %}
-                  {% for _ in range %}
-                  <img src="{% static 'logo/svg/badge-favorite-rating-star-svgrepo-com.svg' %}" alt="" height="15px">
-                  {% endfor %}
-                  {% endwith %}
-                
-                <img src="{% static 'logo/svg/award-badge-medal-prize-star-winner-svgrepo-com.svg' %}" alt="" height="15px">
+                {% for _ in range %}
+
+                <i class="fa fa-star"></i>
+                {% endfor %}
+                {% endwith %}
+
+                {% with card.star|regularStar:5 as range %}
+                {% for _ in range %}
+                <i class="fa fa-star-o"></i>
+                {% endfor %}
+                {% endwith %}
               </div>
             </div>
           </div>
@@ -116,46 +129,54 @@
       <div class="col-md-9  col-sm-12">
 
         <div class="d-flex  justify-content-center pb-0">
-          <h2 class=" mb-2 title-text mt-5 pb-3 border-bottom border-dark kb"><span class="px-3"><img src="{% static 'logo/svg/square-academic-cap-svgrepo-com.svg'%}" alt="" srcset="" height="50px">Scholarship</span>
+          <h2 class=" mb-2 title-text mt-5 pb-3 border-bottom border-dark kb"><span class="px-3">
+            <i class="fa-solid fa-graduation-cap text-dark"></i> Scholarship</span>
           </h2>
         </div>
 
 
         <!-- scholar card  -->
         <div class="row">
-        {% for scholcard in scholarship_row %}
-        
+          {% for scholcard in scholarship_row %}
+
           <div class="col-md-6 col-12 gy-2 g-md-4">
             <a href="{% url 'scholar_blog' scholcard.slug %}">
-              <div class="card d-flex flex-row cb2 border">
-                <div class="card-body d-block flex-columnp">
-                  <p class="card-text fw-bold">{{scholcard.title}}.</p>
-                    <div class="footer-card">
-                      <div class="d-flex my-auto">
-                      <img class="pb-1" src="{% static 'logo/svg/stopwatch-svgrepo-com.svg'%}" alt="" srcset=""> 
-                      <span class="py-1">{{scholcard.publish_date}}</span>
+              <div class="card d-flex flex-row cb2 border h-100">
+
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <p class="card-text d-block text-dark fw-bold">{{scholcard.title}}.</p>
+                  <div class="footer-card">
+                    <div class="d-flex my-auto">
+                      <span class="py-1 d-flex align-items-center"><i class="fa-regular d-block fa-clock" style="font-size:16px;"></i> <span class="ms-1 d-block">{{scholcard.publish_date}}</span></span>
                     </div>
                     <div class="my-auto">
                       {% with ''|center:scholcard.star as range %}
-                  {% for _ in range %}
-                  <img src="{% static 'logo/svg/badge-favorite-rating-star-svgrepo-com.svg' %}" alt="" height="15px">
-                  {% endfor %}
-                  {% endwith %}
-                  <img src="{% static 'logo/svg/square-academic-cap-svgrepo-com.svg'%}" alt="" height="20px" >
+                      {% for _ in range %}
+                      
+                      <i class="fa fa-star text-warning"></i>
+                      {% endfor %}
+                      {% endwith %}
+
+                      {% with scholcard.star|regularStar:5 as range %}
+                      {% for _ in range %}
+                      <i class="fa fa-star-o"></i>
+                      {% endfor %}
+                      {% endwith %}
                     </div>
                   </div>
                 </div>
-                <img src="{{scholcard.feature_image.url}}" alt="" srcset="" style="width: 100px;">
               </div>
 
             </a>
           </div>
           {% endfor %}
 
-          {% comment %} see more button  {% endcomment %}
+          {% comment %} see more button {% endcomment %}
           <div class="col-md-12 col-12 gy-2 g-md-4">
             <div class="d-grid gap-2">
-              <a class="btn-custom text-center" type="button" href="{% url 'scholarships' %}"> See more <img src="{% static 'logo/svg/in-administration-control-edit-option-setting-svgrepo-com.svg'%}" alt="" srcset=""></a>
+              <a class="btn-custom text-center" type="button" href="{% url 'scholarships' %}"> See more <img
+                  src="{% static 'logo/svg/in-administration-control-edit-option-setting-svgrepo-com.svg'%}" alt=""
+                  srcset=""></a>
             </div>
           </div>
         </div>
@@ -164,31 +185,34 @@
 
         <!-- internship card  -->
         <div class="d-flex  justify-content-center">
-          <h2 class="mb-2 title-text mt-5 pb-3 border-bottom kb"><span class="px-3"><img src="{% static 'logo/svg/intern.svg'%}" alt="" srcset="" height="50px"> Internship</span></h2>
+          <h2 class="mb-2 title-text mt-5 pb-3 border-bottom kb"><span class="px-3"><i class="fa-solid fa-briefcase text-dark"></i> Internship</span></h2>
         </div>
         <div class="row">
           {% for interncard in internship_row %}
           <div class="col-md-6 col-12 gy-2 g-md-4">
             <a href="{% url 'intern_blog' interncard.slug %}">
-              <div class="card d-flex flex-row cb2 border">
-                <div class="card-body d-block flex-columnp">
-                  <p class="card-text fw-bold">{{interncard.title}}.</p>
-                    <div class="footer-card">
-                      <div class="d-flex my-auto">
-                        <img class="pb-1" src="{% static 'logo/svg/stopwatch-svgrepo-com.svg'%}" alt="" srcset=""> 
-                      <span class="py-1">{{interncard.publish_date}}</span>
+              <div class="card d-flex flex-row cb2 border h-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <p class="card-text text-dark fw-bold">{{interncard.title}}.</p>
+                  <div class="footer-card">
+                    <div class="d-flex my-auto">
+                      <span class="py-1 d-flex align-items-center"><i class="fa-regular d-block fa-clock" style="font-size:16px;"></i> <span class="ms-1 d-block">{{interncard.publish_date}}</span></span>
                     </div>
                     <div class="my-auto">
                       {% with ''|center:interncard.star as range %}
-                        {% for _ in range %}
-                        <img src="{% static 'logo/svg/badge-favorite-rating-star-svgrepo-com.svg' %}" alt="" height="15px">
-                        {% endfor %}
-                        {% endwith %}
-                      <img src="{% static 'logo/svg/intern.svg'%}" alt="" height="20px" >
+                      {% for _ in range %}
+                      <i class="fa fa-star text-warning"></i>
+                      {% endfor %}
+                      {% endwith %}
+
+                      {% with interncard.star|regularStar:5 as range %}
+                      {% for _ in range %}
+                      <i class="fa fa-star-o text-warning"></i>
+                      {% endfor %}
+                      {% endwith %}
                     </div>
                   </div>
                 </div>
-                <img src="{{interncard.feature_image.url}}" alt="" srcset="" style="width: 100px;">
               </div>
 
             </a>
@@ -197,14 +221,16 @@
           {% endfor %}
 
 
-          {% comment %} see more button  {% endcomment %}
+          {% comment %} see more button {% endcomment %}
           <div class="col-md-12 col-12 gy-2 g-md-4">
             <div class="d-grid gap-2">
-              <a class="btn-custom text-center" type="button" href="{% url 'internships' %}"> See more <img src="{% static 'logo/svg/in-administration-control-edit-option-setting-svgrepo-com.svg'%}" alt="" srcset=""></a>
+              <a class="btn-custom text-center" type="button" href="{% url 'internships' %}"> See more <img
+                  src="{% static 'logo/svg/in-administration-control-edit-option-setting-svgrepo-com.svg'%}" alt=""
+                  srcset=""></a>
             </div>
           </div>
 
-          
+
 
         </div>
       </div>
@@ -214,104 +240,114 @@
 
     <div class="row">
       <div class="col-md-4 col-12 gy-2 g-md-4">
-        
+
         <canvas id="myChart1"></canvas>
       </div>
       <div class="col-md-4 col-12 gy-2 g-md-4">
-        
-        <canvas id="myChart3" ></canvas>
+
+        <canvas id="myChart3"></canvas>
       </div>
       <div class="col-md-4 col-12 gy-2 g-md-4">
-        
-        <canvas id="myChart2" ></canvas>
+
+        <canvas id="myChart2"></canvas>
       </div>
-      
-        <script>
-          const label_schol = [{% for country in schol_country %}'{{country}}', {% endfor %}]
-          const value_schol = [{% for value in schol_data %} {{value}},{% endfor %}]
-          const label_intern = [{% for country in intern_country %}'{{country}}', {% endfor %}]
-          const value_intern = [{% for value in intern_data %} {{value}},{% endfor %}]
-          
-            const ctx1 = document.getElementById('myChart1');
-            const ctx2 = document.getElementById('myChart2');
-            const ctx3 = document.getElementById('myChart3');
-            const myChart1 = new Chart(ctx1, {
-                type: 'bar',
-                data: {
-                    labels: label_schol,
-                    datasets: [{
-                        label: 'Scholarship',
-                        data: value_schol,
-                        backgroundColor: [
-                            'rgba(249, 92, 57,0.8)'
-                        ],
-                        borderColor: [
-                            'rgba(249, 92, 57,1)',
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-            const myChart2 = new Chart(ctx2, {
-                type: 'bar',
-                data: {
-                    labels: label_intern,
-                    datasets: [{
-                        label: 'Internship',
-                        data: value_intern,
-                        backgroundColor: [
-                            'rgba(0,128,128,0.7)'
-                        ],
-                        borderColor: [
-                            'rgba(0,128,128,1)',
-                        ],
-                        borderWidth: 1,
-                        hoverOffset: 9
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-            const myChart3 = new Chart(ctx3, {
-                type: 'doughnut',
-                data: {
-                    labels: label_schol,
-                    datasets: [{
-                        label: 'Scholarship',
-                        data: value_schol,
-                        backgroundColor: [
-                          'rgb(255, 99, 132)',
-                          'rgb(54, 162, 235)',
-                          'rgb(255, 205, 86)'
-                        ],
-                        hoverOffset: 9
-                    }]
-                },
-               
-            });
-        
-        
-        </script>
-      
-      
+
+      <script>
+        const label_schol = [
+          {% for country in schol_country %}
+          '{{country}}', {%endfor%}
+        ]
+        const value_schol = [
+          {% for value in schol_data %} 
+          {{value}}, 
+          {% endfor %}]
+        const label_intern = [
+          {% for country in intern_country %}
+          '{{country}}', 
+          {% endfor %}]
+        const value_intern = [
+          {% for value in intern_data %} 
+          {{value}}, 
+          {% endfor %}]
+
+        const ctx1 = document.getElementById('myChart1');
+        const ctx2 = document.getElementById('myChart2');
+        const ctx3 = document.getElementById('myChart3');
+        const myChart1 = new Chart(ctx1, {
+          type: 'bar',
+          data: {
+            labels: label_schol,
+            datasets: [{
+              label: 'Scholarship',
+              data: value_schol,
+              backgroundColor: [
+                'rgba(249, 92, 57,0.8)'
+              ],
+              borderColor: [
+                'rgba(249, 92, 57,1)',
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+        const myChart2 = new Chart(ctx2, {
+          type: 'bar',
+          data: {
+            labels: label_intern,
+            datasets: [{
+              label: 'Internship',
+              data: value_intern,
+              backgroundColor: [
+                'rgba(0,128,128,0.7)'
+              ],
+              borderColor: [
+                'rgba(0,128,128,1)',
+              ],
+              borderWidth: 1,
+              hoverOffset: 9
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+        const myChart3 = new Chart(ctx3, {
+          type: 'doughnut',
+          data: {
+            labels: label_schol,
+            datasets: [{
+              label: 'Scholarship',
+              data: value_schol,
+              backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+              ],
+              hoverOffset: 9
+            }]
+          },
+
+        });
+      </script>
+
+
     </div>
   </div>
-</section> 
+</section>
 {% endblock content %}
 {% endblock main %}
 
 {% block footer %}
-      {% include 'footer.html' %}
-      {% endblock footer %}
+{% include 'footer.html' %}
+{% endblock footer %}

@@ -13,3 +13,9 @@ def split(value):
     Returns the value turned into a list.
   """
   return str(value).split('-')
+
+
+@register.filter(is_safe=True)
+def regularStar(value, arg):
+    """Removes all values of arg from the given string"""
+    return abs(value-int(arg))*'a'

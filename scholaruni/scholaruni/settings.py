@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'scholarship.apps.ScholarshipConfig',
+    'fontawesomefree',
+    'ckeditor',
 ]
 SITE_ID = 1 
 MIDDLEWARE = [
@@ -137,10 +139,10 @@ USE_TZ = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'premium127.web-hosting.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'samsmusa.nstu@gmail.com'
-EMAIL_HOST_PASSWROD = 'AHMAD9875321sam/g'
+EMAIL_HOST_USER = 'info@scholaruni.com'
+EMAIL_HOST_PASSWROD = 'namecheap@AHMAD9875321sam'
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # DEFAULT_TO_EMAIL = EMAIL_HOST_USER
 
@@ -160,3 +162,11 @@ MEDIA_ROOT = BASE_DIR / 'static/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': 550,
+    },
+}

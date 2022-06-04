@@ -1,0 +1,865 @@
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OpenBLAS blas_thread_init: pthread_create failed for thread 23 of 24: Resource temporarily unavailable
+OpenBLAS blas_thread_init: RLIMIT_NPROC 1400 current, 1500 max
+[ERROR] [UID:1841][3967151] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 133, in __call__
+    response = self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 130, in get_response
+    response = self._middleware_chain(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 6, in <module>
+    import pandas as pd
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/numpy/__init__.py", line 150, in <module>
+    from . import core
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/numpy/core/__init__.py", line 22, in <module>
+    from . import multiarray
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/numpy/core/multiarray.py", line 12, in <module>
+    from . import overrides
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/numpy/core/overrides.py", line 7, in <module>
+    from numpy.core._multiarray_umath import (
+KeyboardInterrupt
+[UID:1841][3967082] Child process with pid: 3967151 was killed by signal: 11, core dump: 0
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Traceback (most recent call last):
+  File "/home/scholaez/scholaruni_website/passenger_wsgi.py", line 1, in <module>
+    from scholaruni.wsgi import application
+  File "/home/scholaez/scholaruni_website/scholaruni/__init__.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/home/scholaez/scholaruni_website/passenger_wsgi.py", line 1, in <module>
+    from scholaruni.wsgi import application
+  File "/home/scholaez/scholaruni_website/scholaruni/__init__.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/home/scholaez/scholaruni_website/passenger_wsgi.py", line 1, in <module>
+    from scholaruni.wsgi import application
+  File "/home/scholaez/scholaruni_website/scholaruni/__init__.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/home/scholaez/scholaruni_website/passenger_wsgi.py", line 1, in <module>
+    from scholaruni.wsgi import application
+  File "/home/scholaez/scholaruni_website/scholaruni/__init__.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Internal Server Error: /admin/scholarship/scholarships/36/change/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 149, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 201, in render
+    return template.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 178, in render
+    return self._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 298, in render
+    return nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 298, in render
+    return nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 1044, in render
+    return render_value_in_context(output, context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 1021, in render_value_in_context
+    value = str(value)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/html.py", line 377, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/boundfield.py", line 92, in as_widget
+    return widget.render(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/widgets.py", line 247, in render
+    return self._render(self.template_name, context, renderer)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/widgets.py", line 252, in _render
+    return mark_safe(renderer.render(template_name, context))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/renderers.py", line 22, in render
+    template = self.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/renderers.py", line 28, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 36, in get_template
+    reraise(exc, self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+Not Found: /static/static/ckeditor/ckeditor/ckeditor.js
+Not Found: /static/static/ckeditor/ckeditor-init.js
+Not Found: /static/static/ckeditor/ckeditor-init.js
+Not Found: /static/static/ckeditor/ckeditor/ckeditor.js
+Not Found: /static/static/ckeditor/ckeditor-init.js
+Not Found: /static/static/ckeditor/ckeditor/ckeditor.js
+[ERROR] [UID:1841][3995013] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 126, in __call__
+    response = response or self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 133, in __call__
+    response = self.get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 130, in get_response
+    response = self._middleware_chain(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 110, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 148, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 648, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+Internal Server Error: /admin/scholarship/scholarships/57/change/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 9, in <module>
+    from .forms import MessageForm, SubscriptionForm, EmailForm
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 42, in <module>
+    class EmailForm(ModelForm):
+  File "/home/scholaez/scholaruni_website/scholarship/forms.py", line 46, in EmailForm
+    body =  forms.CharField(widget=CKEditorWidget(config_name='default'))
+NameError: name 'CKEditorWidget' is not defined
+Internal Server Error: /admin/scholarship/scholarships/57/change/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 185, in <module>
+    @login_required(login_url='/admin')
+NameError: name 'login_required' is not defined
+Not Found: /static/static/ckeditor/ckeditor-init.js
+Not Found: /static/static/ckeditor/ckeditor/ckeditor.js
+Not Found: /static/static/ckeditor/ckeditor/ckeditor.js
+Not Found: /static/static/ckeditor/ckeditor-init.js
+Not Found: /dashboard
+Not Found: /static/static/ckeditor/ckeditor-init.js
+Not Found: /static/static/ckeditor/ckeditor/ckeditor.js

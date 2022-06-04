@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView
+from .views import ScholarshipDetailView, ScholarshipView,InternshipView, dashboard,search, about, about, createMessage,HomeView, InternshipDetailView, blogView, BlogDetails
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
@@ -22,7 +22,10 @@ urlpatterns = [
     path('scholarship/<slug:slug>', ScholarshipDetailView, name="scholar_blog"),
     path('internship/<slug:slug>', InternshipDetailView, name="intern_blog"),
     path('contact/', createMessage, name="contact"),
+    path('blog/', blogView, name="blog"),
+    path('blog/<slug:slug>', BlogDetails, name="blogDetials"),
     path('about/', about, name="about"),
+    path('dashboard/', dashboard, name="dashboard"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
