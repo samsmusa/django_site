@@ -126,23 +126,24 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = 'mail.scholaruni.com'
-# # EMAIL_HOST = 'mail.privateemail.com'
-# EMAIL_HOST_USER = 'info@scholaruni.com'
-# EMAIL_HOST_PASSWORD = 'namecheap@AHMAD9875321sam'
-# EMAIL_PORT = 26 
-# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'mail.privateemail.com'
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'samsmusa@outlook.com'
+EMAIL_HOST_PASSWORD = 'AHMAD9875321sam/o'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 # EMAIL_USE_SSl = False
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'premium127.web-hosting.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'info@scholaruni.com'
-EMAIL_HOST_PASSWROD = 'namecheap@AHMAD9875321sam'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'premium127.web-hosting.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'info@scholaruni.com'
+# EMAIL_HOST_PASSWROD = 'namecheap@AHMAD9875321sam'
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # DEFAULT_TO_EMAIL = EMAIL_HOST_USER
 

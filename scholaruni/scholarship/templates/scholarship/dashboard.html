@@ -44,6 +44,9 @@
                 <!-- Bootstrap 5 starter form -->
                 <form id="contactForm" method="POST">
                     {% csrf_token %}
+                    <div class="d-grid">
+                        <input name="title" class="btn submit-btn " type="text" placeholder="title">
+                    </div>
                     {{ form.media }}
                     {{ form.as_p }}
                     <div class="d-grid">
