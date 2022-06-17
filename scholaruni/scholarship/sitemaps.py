@@ -1,10 +1,10 @@
 from django.contrib.sitemaps import Sitemap
-from .models import Scholarships, Internship
+from .models import Blog, Scholarships, Internship
  
  
 class ScholarshipSitemap(Sitemap):
     changefreq = "weekly"
-    priority = 0.8
+    priority = 1
     protocol = 'https'
 
     def items(self):
@@ -16,11 +16,22 @@ class ScholarshipSitemap(Sitemap):
 
 class InternshipSitemap(Sitemap):
     changefreq = "weekly"
-    priority = 0.9
+    priority = 1
     protocol = 'https'
 
     def items(self):
         return Internship.objects.all()
+
+    def lastmod(self, obj):
+        return obj.add_date
+
+class BlogSitemap(Sitemap):
+    changefreq = "weekly"
+    priority = 1
+    protocol = 'https'
+
+    def items(self):
+        return Blog.objects.all()
 
     def lastmod(self, obj):
         return obj.add_date

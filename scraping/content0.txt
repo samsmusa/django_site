@@ -1,0 +1,356 @@
+<div class="td_block_wrap tdb_single_content tdi_42 td-pb-border-top td_block_template_1 td-post-content tagdiv-type"
+        data-td-block-uid="tdi_42">
+        <style>
+            .tdb_single_content {
+                margin-bottom: 0;
+                *zoom: 1
+            }
+
+            .tdb_single_content:before,
+            .tdb_single_content:after {
+                display: table;
+                content: '';
+                line-height: 0
+            }
+
+            .tdb_single_content:after {
+                clear: both
+            }
+
+            .tdb_single_content .tdb-block-inner>*:not(.wp-block-quote):not(.alignwide):not(.td-a-ad) {
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .tdb_single_content a {
+                pointer-events: auto
+            }
+
+            .tdb_single_content .td-spot-id-top_ad .tdc-placeholder-title:before {
+                content: 'Article Top Ad' !important
+            }
+
+            .tdb_single_content .td-spot-id-inline_ad0 .tdc-placeholder-title:before {
+                content: 'Article Inline Ad 1' !important
+            }
+
+            .tdb_single_content .td-spot-id-inline_ad1 .tdc-placeholder-title:before {
+                content: 'Article Inline Ad 2' !important
+            }
+
+            .tdb_single_content .td-spot-id-inline_ad2 .tdc-placeholder-title:before {
+                content: 'Article Inline Ad 3' !important
+            }
+
+            .tdb_single_content .td-spot-id-bottom_ad .tdc-placeholder-title:before {
+                content: 'Article Bottom Ad' !important
+            }
+
+            .tdb_single_content .id_top_ad,
+            .tdb_single_content .id_bottom_ad {
+                clear: both;
+                margin-bottom: 21px;
+                text-align: center
+            }
+
+            .tdb_single_content .id_top_ad img,
+            .tdb_single_content .id_bottom_ad img {
+                margin-bottom: 0
+            }
+
+            .tdb_single_content .id_top_ad .adsbygoogle,
+            .tdb_single_content .id_bottom_ad .adsbygoogle {
+                position: relative
+            }
+
+            .tdb_single_content .id_ad_content-horiz-left,
+            .tdb_single_content .id_ad_content-horiz-right,
+            .tdb_single_content .id_ad_content-horiz-center {
+                margin-bottom: 15px
+            }
+
+            .tdb_single_content .id_ad_content-horiz-left img,
+            .tdb_single_content .id_ad_content-horiz-right img,
+            .tdb_single_content .id_ad_content-horiz-center img {
+                margin-bottom: 0
+            }
+
+            .tdb_single_content .id_ad_content-horiz-center {
+                text-align: center
+            }
+
+            .tdb_single_content .id_ad_content-horiz-center img {
+                margin-right: auto;
+                margin-left: auto
+            }
+
+            .tdb_single_content .id_ad_content-horiz-left {
+                float: left;
+                margin-top: 9px;
+                margin-right: 21px
+            }
+
+            .tdb_single_content .id_ad_content-horiz-right {
+                float: right;
+                margin-top: 6px;
+                margin-left: 21px
+            }
+
+            .tdb_single_content .tdc-a-ad .tdc-placeholder-title {
+                width: 300px;
+                height: 250px
+            }
+
+            .tdb_single_content .tdc-a-ad .tdc-placeholder-title:before {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                margin: auto;
+                display: table;
+                width: 100%
+            }
+
+            .tdi_42,
+            .tdi_42>p,
+            .tdi_42 .tdb-block-inner>p {
+                font-family: Roboto !important;
+                font-size: 17px !important;
+                line-height: 1.5 !important;
+                font-weight: 400 !important
+            }
+
+            .tdi_42 h1 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 h2 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 h3 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 h4 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 li {
+                font-family: Roboto !important
+            }
+
+            .tdi_42 .tdb-block-inner blockquote p {
+                font-family: Roboto !important;
+                line-height: 1 !important;
+                font-style: normal !important
+            }
+
+            .tdi_42 .wp-caption-text,
+            .tdi_42 figcaption {
+                font-family: Roboto !important;
+                font-size: 13px !important;
+                line-height: 1.2 !important;
+                font-style: normal !important
+            }
+
+            .tdi_42,
+            .tdi_42 p {
+                color: #000
+            }
+
+            @media(max-width:767px) {
+
+                .tdb_single_content .id_ad_content-horiz-left,
+                .tdb_single_content .id_ad_content-horiz-right,
+                .tdb_single_content .id_ad_content-horiz-center {
+                    margin: 0 auto 26px
+                }
+            }
+
+            @media(max-width:767px) {
+                .tdb_single_content .id_ad_content-horiz-left {
+                    margin-right: 0
+                }
+            }
+
+            @media(max-width:767px) {
+                .tdb_single_content .id_ad_content-horiz-right {
+                    margin-left: 0
+                }
+            }
+
+            @media(max-width:767px) {
+                .tdb_single_content .td-a-ad {
+                    float: none;
+                    text-align: center
+                }
+
+                .tdb_single_content .td-a-ad img {
+                    margin-right: auto;
+                    margin-left: auto
+                }
+
+                .tdb_single_content .tdc-a-ad {
+                    float: none
+                }
+            }
+
+            @media print {
+
+                .single .td-header-template-wrap,
+                .single .td-footer-template-wrap,
+                .single .td_block_wrap:not(.tdb_breadcrumbs):not(.tdb_single_categories):not(.tdb-single-title):not(.tdb_single_author):not(.tdb_single_date):not(.tdb_single_comments_count):not(.tdb_single_post_views):not(.tdb_single_featured_image):not(.tdb_single_content) {
+                    display: none
+                }
+
+                .single.td-animation-stack-type0 .post img {
+                    opacity: 1 !important
+                }
+            }
+
+            @media(min-width:768px) and (max-width:1018px) {
+
+                .tdi_42,
+                .tdi_42>p,
+                .tdi_42 .tdb-block-inner>p {
+                    font-family: Roboto !important;
+                    font-size: 15px !important;
+                    line-height: 1.5 !important;
+                    font-weight: 400 !important
+                }
+
+                .tdi_42 .tdb-block-inner blockquote p {
+                    font-family: Roboto !important;
+                    font-size: 24px !important;
+                    line-height: 1 !important;
+                    font-style: normal !important
+                }
+            }
+
+            @media(max-width:767px) {
+
+                .tdi_42,
+                .tdi_42>p,
+                .tdi_42 .tdb-block-inner>p {
+                    font-family: Roboto !important;
+                    font-size: 15px !important;
+                    line-height: 1.5 !important;
+                    font-weight: 400 !important
+                }
+
+                .tdi_42 .tdb-block-inner blockquote p {
+                    font-family: Roboto !important;
+                    font-size: 20px !important;
+                    line-height: 1 !important;
+                    font-style: normal !important
+                }
+
+                .tdi_42 .wp-caption-text,
+                .tdi_42 figcaption {
+                    font-family: Roboto !important;
+                    font-size: 11px !important;
+                    line-height: 1.2 !important;
+                    font-style: normal !important
+                }
+            }
+        </style>
+        <div class="tdb-block-inner td-fix-index">
+            <p>Writing an Effective CV is very important. In this article, you will learn how to make an effective
+                Curriculum Vitae. Read carefully this article and follow all the steps mention in this article.</p>
+            <div class="code-block code-block-3" style="margin:8px 0;clear:both">
+                <div class="adsbyir 970x250"></div><span id="ezoic-pub-ad-placeholder-145"></span><span
+                    class="ezoic-ad medrectangle-3 medrectangle-3145 adtester-container adtester-container-145"
+                    data-ez-name="scholaruni-medrectangle-3"><span class="ezoic-ad" ezah="90" ezaw="728"
+                        id="div-gpt-ad-scholaruni-medrectangle-3-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:90px;min-width:728px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[728, 90], 'scholaruni-medrectangle-3', 'ezslot_3', 145, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-medrectangle-3-0') };</script>
+                    </span></span>
+            </div>
+            <p>What’s a CV? CV, known as Curriculum Vitae is a detailed profile of a person that includes the basic
+                information, qualification, achievements, skills, and work experience. It plays a vital role in the
+                selection of a candidate for a position in a firm. It reflects a person professionally as well as
+                personally.<span class="ezoic-adpicker-ad" id="ezoic-pub-ad-placeholder-163"></span></p>
+            <p><strong>Why designing a Professional CV is crucial?</strong></p>
+            <div class="code-block code-block-2" style="margin:8px auto;text-align:center;display:block;clear:both">
+                <div class="adsbyir 970x250"></div><span id="ezoic-pub-ad-placeholder-146"></span><span
+                    class="ezoic-ad medrectangle-4 medrectangle-4146 adtester-container adtester-container-146"
+                    data-ez-name="scholaruni-medrectangle-4"><span class="ezoic-ad" ezah="250"
+                        ezaw="300" id="div-gpt-ad-scholaruni-medrectangle-4-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:300px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[300, 250], 'scholaruni-medrectangle-4', 'ezslot_4', 146, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-medrectangle-4-0') };</script>
+                    </span></span>
+            </div>
+            <p>Before meeting a recruiter, your CV is the only way to communicate directly to him. Your CV leaves an
+                impression that makes a recruiter’s mind whether to meet you in person or not. A tailored CV is the best
+                way to increase your chances of approaching the employer.</p>
+            <div class="code-block code-block-4" style="margin:8px 0;clear:both"><span
+                    id="ezoic-pub-ad-placeholder-147"></span><span
+                    class="ezoic-ad box-4 box-4147 adtester-container adtester-container-147"
+                    data-ez-name="scholaruni-box-4"><span class="ezoic-ad" ezah="250" ezaw="300"
+                        id="div-gpt-ad-scholaruni-box-4-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:300px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[300, 250], 'scholaruni-box-4', 'ezslot_6', 147, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-box-4-0') };</script>
+                    </span></span></div>
+            <div class="td-a-ad id_inline_ad1 id_ad_content-horiz-center"><span class="td-adspot-title">- Advertisement
+                    -</span></div>
+            <p>The following guidelines by Scholarships Corner would help you to make a customized CV according to your
+                favorite place of Job or internship. Share with your friends and Good Luck!</p>
+            <h2>Guidelines to Write an Effective CV:</h2>
+            <ol>
+                <li>A candidate should include his official name, email, and address.</li>
+                <li>A candidate should never use a personal pronoun i.e. ‘I’</li>
+                <li>A candidate should never mention any irrelevant information like gender until and unless the
+                    application requires.</li>
+                <li>A candidate should never add his or her picture that may cause any biasness until and unless the
+                    application requires.</li>
+                <li> A candidate should mention his or her practical achievements and skills. He or she shouldn’t
+                    include any experience if he doesn’t have an experience letter or certificate.</li>
+                <li>A candidate should avoid complex vocabulary or flowery words. He should include simple language as
+                    the recruiter judge all these professional skills.</li>
+                <li>A candidate should always include work experience and qualification from the latest to the oldest.
+                </li>
+                <li>A candidate should review the CV for any punctuation or grammatical mistakes</li>
+                <li>A candidate should never add any reference until required.</li>
+                <li>A candidate should add his or her contact number with an international country code +92-123-1234567
+                </li>
+                <li>A candidate should never add hobbies or interests in the effective CV. Don’t write about your
+                    hobbies and interests, they are not inviting you to friendship.</li>
+            </ol>
+            <ol start="12">
+                <li>A candidate should always design a CV according to the specific job, education, or internship
+                    requirements.</li>
+                <li>A CV should be based on a single page but it can be 2 pages as well but should not be more than that
+                    as it takes too much time to review the application that recruiters don’t have.</li>
+                <li>A candidate should design the relevant CV according to the employer’s requirements.</li>
+                <li>A candidate should always use PDF format for emailing CVs and Cover Letters so that page settings
+                    wouldn’t be disturbed while printing.</li>
+                <li>A candidate should review the CVs before applying for a specific job or place and look for the
+                    keywords according to that specific job requirement. For example, a clinical Dietician professional
+                    may have used words in job skills or traineeship such as, ‘counselor’, ‘assessment’, or
+                    anthropometric measurements.</li>
+            </ol>
+            <p>It doesn’t matter how good you are at your grades or achievements, if you wouldn’t show professional
+                write up in your CV your chances of selection will be quite low.</p>
+            <p>A CV must be a wholesome formula that shows your passion for work, interest in the firm, dedicated, and
+                efficient in your field of interest. You will be assessed entirely by the recruiter from a page of the
+                CV.</p>
+            <p><strong>You might be interested in the following Scholarship Guides:</strong></p>
+            <ol>
+                <li><a href="https://scholaruni.com/blog/how-to-win-a-chevening-scholarship-uk/"
+                        rel="noopener noreferrer" target="_blank">How to win a Chevening Scholarship UK?</a></li>
+                <li><a href="https://scholaruni.com/blog/erasmusplus-scholarship-guide/"
+                        rel="noopener noreferrer" target="_blank">Erasmus Scholarship Guide 2021 </a></li>
+                <li><a href="https://scholaruni.com/blog/gre-preparation-guide/" rel="noopener noreferrer"
+                        target="_blank">GRE Preparation Guide</a></li>
+            </ol>
+            
+        </div>
+    </div>

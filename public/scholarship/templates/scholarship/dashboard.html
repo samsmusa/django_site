@@ -15,7 +15,7 @@
 
 {% block content %}
 
-<div class="container vh-100" style="background-color:#dcdcdc; text-shadow:0.3px 0.5px 1.5px  gray;">
+<div class="container" style="background-color:#dcdcdc; text-shadow:0.3px 0.5px 1.5px  gray;">
     <div class="row">
         <div class="col-3">
             <div class="bg-light rounded">
@@ -33,7 +33,7 @@
             <div class="bg-light rounded mt-1 px-2">
                 <p class="border-bottom border-warning">You have: {{subscriptions|length }}</p>
                 {% for subscriber in subscriptions %}
-                <span class="text-center m-o p-0 border-bottom">{{subscriber.email}}</span>
+                <span class="text-center m-o p-0 border-bottom " style="font-size:11px">{{subscriber.email}}</span>
                 {% endfor %}
             </div>
 
@@ -44,6 +44,10 @@
                 <!-- Bootstrap 5 starter form -->
                 <form id="contactForm" method="POST">
                     {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Email Title</label>
+                        <input placeholder="Email Title" type="text" class="form-control" id="title" name="title" required>
+                    </div>
                     {{ form.media }}
                     {{ form.as_p }}
                     <div class="d-grid">
@@ -52,7 +56,6 @@
 
                 </form>
             </div>
-            sdfsdfsd sfd
         </div>
         <div class="col-3">
             <div class="mt-3 bg-light rounded">
@@ -65,13 +68,13 @@
             </div>
 
             <div class="mt-1 bg-light rounded px-2">
-                <p class="px-2 m-0 py-0 border-bottom border-warning">Update log(scholarship)</p>
+                <p class="px-2 m-0 py-0 border-bottom border-warning">Update log(Internship)</p>
                 {% for intern in updateInternPost %}
                 <p> <span>{{intern.created}}<span> <span>{{intern.addPost}}</span></p>
                 {% endfor %}
             </div>
             <div class="mt-1 bg-light rounded px-2">
-                <p class="px-2 m-0 py-0 border-bottom border-warning">Update log(internship)</p>
+                <p class="px-2 m-0 py-0 border-bottom border-warning">Update log(Scholarship)</p>
                 {% for schol in updateScholPost %}
                 <p> <span>{{schol.created}}<span> <span>{{schol.addPost}}</span></p>
                 {% endfor %}

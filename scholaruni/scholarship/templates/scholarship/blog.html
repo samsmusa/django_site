@@ -33,6 +33,7 @@
 
                         <div class="mt-5 mb-5 border-bottom title-text">
                             <h2 class=" mb-2  pb-3 "><span class="fw-bold">{{object.title}}</span>
+                                <p>https:scholaruni.com {% if content == 'scholarship' %}{% url 'scholar_blog' object.slug %} {% else %} {% url 'intern_blog' object.slug %} {% endif %}  </p>
                             </h2>
                             <div class="d-flex flex-row">
                                 <p class="fs-6 ">by <span class="fw-bold"> scholaruni--</span> </p>

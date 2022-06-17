@@ -81,15 +81,15 @@ def send_html_mail(subject, template, title, content, image, recipient_list):
 
 def createSubscriber(sender, instance, created, **kwargs):
     if created:
-        user = instance
-        send_html_mail(
-            subject='hello',
-            template='email.html',
-            title='world',
-            content='content',
-            image='https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-            recipient_list=[user]
-        )
+        # user = instance
+        # send_html_mail(
+        #     subject='hello',
+        #     template='email.html',
+        #     title='world',
+        #     content='content',
+        #     image='https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+        #     recipient_list=[user]
+        # )
         # html_content = render_to_string("email.html", {'wellcome_msg':'hello', 'content':'hello world', 'image':"https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"})
         # text_content = strip_tags(html_content)
         # email = EmailMultiAlternatives(
@@ -100,6 +100,12 @@ def createSubscriber(sender, instance, created, **kwargs):
         # )
         # email.attach_alternative(html_content, "text/html")
         # email.send()
+        send_html_mail(subject='hi',
+                    template='emailPersonal.html',
+                    title='hello',
+                    content='melo',
+                    image='https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                    recipient_list=[instance])
 
         print('send')
 

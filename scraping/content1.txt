@@ -1,0 +1,618 @@
+<div class="td_block_wrap tdb_single_content tdi_42 td-pb-border-top td_block_template_1 td-post-content tagdiv-type"
+        data-td-block-uid="tdi_42">
+        <style>
+            .tdb_single_content {
+                margin-bottom: 0;
+                *zoom: 1
+            }
+
+            .tdb_single_content:before,
+            .tdb_single_content:after {
+                display: table;
+                content: '';
+                line-height: 0
+            }
+
+            .tdb_single_content:after {
+                clear: both
+            }
+
+            .tdb_single_content .tdb-block-inner>*:not(.wp-block-quote):not(.alignwide):not(.td-a-ad) {
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .tdb_single_content a {
+                pointer-events: auto
+            }
+
+            .tdb_single_content .td-spot-id-top_ad .tdc-placeholder-title:before {
+                content: 'Article Top Ad' !important
+            }
+
+            .tdb_single_content .td-spot-id-inline_ad0 .tdc-placeholder-title:before {
+                content: 'Article Inline Ad 1' !important
+            }
+
+            .tdb_single_content .td-spot-id-inline_ad1 .tdc-placeholder-title:before {
+                content: 'Article Inline Ad 2' !important
+            }
+
+            .tdb_single_content .td-spot-id-inline_ad2 .tdc-placeholder-title:before {
+                content: 'Article Inline Ad 3' !important
+            }
+
+            .tdb_single_content .td-spot-id-bottom_ad .tdc-placeholder-title:before {
+                content: 'Article Bottom Ad' !important
+            }
+
+            .tdb_single_content .id_top_ad,
+            .tdb_single_content .id_bottom_ad {
+                clear: both;
+                margin-bottom: 21px;
+                text-align: center
+            }
+
+            .tdb_single_content .id_top_ad img,
+            .tdb_single_content .id_bottom_ad img {
+                margin-bottom: 0
+            }
+
+            .tdb_single_content .id_top_ad .adsbygoogle,
+            .tdb_single_content .id_bottom_ad .adsbygoogle {
+                position: relative
+            }
+
+            .tdb_single_content .id_ad_content-horiz-left,
+            .tdb_single_content .id_ad_content-horiz-right,
+            .tdb_single_content .id_ad_content-horiz-center {
+                margin-bottom: 15px
+            }
+
+            .tdb_single_content .id_ad_content-horiz-left img,
+            .tdb_single_content .id_ad_content-horiz-right img,
+            .tdb_single_content .id_ad_content-horiz-center img {
+                margin-bottom: 0
+            }
+
+            .tdb_single_content .id_ad_content-horiz-center {
+                text-align: center
+            }
+
+            .tdb_single_content .id_ad_content-horiz-center img {
+                margin-right: auto;
+                margin-left: auto
+            }
+
+            .tdb_single_content .id_ad_content-horiz-left {
+                float: left;
+                margin-top: 9px;
+                margin-right: 21px
+            }
+
+            .tdb_single_content .id_ad_content-horiz-right {
+                float: right;
+                margin-top: 6px;
+                margin-left: 21px
+            }
+
+            .tdb_single_content .tdc-a-ad .tdc-placeholder-title {
+                width: 300px;
+                height: 250px
+            }
+
+            .tdb_single_content .tdc-a-ad .tdc-placeholder-title:before {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                margin: auto;
+                display: table;
+                width: 100%
+            }
+
+            .tdi_42,
+            .tdi_42>p,
+            .tdi_42 .tdb-block-inner>p {
+                font-family: Roboto !important;
+                font-size: 17px !important;
+                line-height: 1.5 !important;
+                font-weight: 400 !important
+            }
+
+            .tdi_42 h1 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 h2 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 h3 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 h4 {
+                font-family: Roboto !important;
+                font-weight: 700 !important
+            }
+
+            .tdi_42 li {
+                font-family: Roboto !important
+            }
+
+            .tdi_42 .tdb-block-inner blockquote p {
+                font-family: Roboto !important;
+                line-height: 1 !important;
+                font-style: normal !important
+            }
+
+            .tdi_42 .wp-caption-text,
+            .tdi_42 figcaption {
+                font-family: Roboto !important;
+                font-size: 13px !important;
+                line-height: 1.2 !important;
+                font-style: normal !important
+            }
+
+            .tdi_42,
+            .tdi_42 p {
+                color: #000
+            }
+
+            @media(max-width:767px) {
+
+                .tdb_single_content .id_ad_content-horiz-left,
+                .tdb_single_content .id_ad_content-horiz-right,
+                .tdb_single_content .id_ad_content-horiz-center {
+                    margin: 0 auto 26px
+                }
+            }
+
+            @media(max-width:767px) {
+                .tdb_single_content .id_ad_content-horiz-left {
+                    margin-right: 0
+                }
+            }
+
+            @media(max-width:767px) {
+                .tdb_single_content .id_ad_content-horiz-right {
+                    margin-left: 0
+                }
+            }
+
+            @media(max-width:767px) {
+                .tdb_single_content .td-a-ad {
+                    float: none;
+                    text-align: center
+                }
+
+                .tdb_single_content .td-a-ad img {
+                    margin-right: auto;
+                    margin-left: auto
+                }
+
+                .tdb_single_content .tdc-a-ad {
+                    float: none
+                }
+            }
+
+            @media print {
+
+                .single .td-header-template-wrap,
+                .single .td-footer-template-wrap,
+                .single .td_block_wrap:not(.tdb_breadcrumbs):not(.tdb_single_categories):not(.tdb-single-title):not(.tdb_single_author):not(.tdb_single_date):not(.tdb_single_comments_count):not(.tdb_single_post_views):not(.tdb_single_featured_image):not(.tdb_single_content) {
+                    display: none
+                }
+
+                .single.td-animation-stack-type0 .post img {
+                    opacity: 1 !important
+                }
+            }
+
+            @media(min-width:768px) and (max-width:1018px) {
+
+                .tdi_42,
+                .tdi_42>p,
+                .tdi_42 .tdb-block-inner>p {
+                    font-family: Roboto !important;
+                    font-size: 15px !important;
+                    line-height: 1.5 !important;
+                    font-weight: 400 !important
+                }
+
+                .tdi_42 .tdb-block-inner blockquote p {
+                    font-family: Roboto !important;
+                    font-size: 24px !important;
+                    line-height: 1 !important;
+                    font-style: normal !important
+                }
+            }
+
+            @media(max-width:767px) {
+
+                .tdi_42,
+                .tdi_42>p,
+                .tdi_42 .tdb-block-inner>p {
+                    font-family: Roboto !important;
+                    font-size: 15px !important;
+                    line-height: 1.5 !important;
+                    font-weight: 400 !important
+                }
+
+                .tdi_42 .tdb-block-inner blockquote p {
+                    font-family: Roboto !important;
+                    font-size: 20px !important;
+                    line-height: 1 !important;
+                    font-style: normal !important
+                }
+
+                .tdi_42 .wp-caption-text,
+                .tdi_42 figcaption {
+                    font-family: Roboto !important;
+                    font-size: 11px !important;
+                    line-height: 1.2 !important;
+                    font-style: normal !important
+                }
+            }
+        </style>
+        <div class="tdb-block-inner td-fix-index">
+            <p>In this article, you will get a deep understanding of how to fill out the Chevening scholarship UK
+                application form step by step. As a candidate, you will begin your application with the work experience,
+                heading to the selection of the university along with the field of interest, and will write 4 essays
+                that are a crucial part of the Chevening scholarship online application form but before that, you need
+                to know what Chevening scholarship is about?</p>
+            <div class="code-block code-block-3" style="margin:8px 0;clear:both">
+                <div class="adsbyir 970x250"></div><span id="ezoic-pub-ad-placeholder-145"></span><span
+                    class="ezoic-ad medrectangle-3 medrectangle-3145 adtester-container adtester-container-145"
+                    data-ez-name="scholaruni-medrectangle-3"><span class="ezoic-ad" ezah="90" ezaw="728"
+                        id="div-gpt-ad-scholaruni-medrectangle-3-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:90px;min-width:728px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[728, 90], 'scholaruni-medrectangle-3', 'ezslot_3', 145, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-medrectangle-3-0') };</script>
+                    </span></span>
+            </div>
+            <h3>What is the Chevening Scholarship Uk?</h3>
+            <p>Among all the top master’s scholarships in the UK, the <a
+                    href="https://scholarshipscorner.website/chevening-scholarship/" rel="noopener noreferrer"
+                    target="_blank">Chevening scholarship</a> is one of them. But becoming an ideal candidate for this
+                opportunity needs you to understand the application and selection process thoroughly. We are here to
+                guide you step by step regarding Chevening scholarship UK 2021-22.<span class="ezoic-adpicker-ad"
+                    id="ezoic-pub-ad-placeholder-163"></span></p>
+            <p>Chevening scholarship is a fully-funded one-year <a
+                    href="https://scholarshipscorner.website/rhodes-scholarship/" rel="noopener noreferrer"
+                    target="_blank">master’s degree scholarship program</a> in the UK in which outstanding emerging
+                leaders across the world are calling out to practice their innovative research ideas, work on global
+                problems, and empower their leadership qualities in order to build a better future.</p>
+            <div class="code-block code-block-2" style="margin:8px auto;text-align:center;display:block;clear:both">
+                <div class="adsbyir 970x250"></div><span id="ezoic-pub-ad-placeholder-146"></span><span
+                    class="ezoic-ad medrectangle-4 medrectangle-4146 adtester-container adtester-container-146"
+                    data-ez-name="scholaruni-medrectangle-4"><span class="ezoic-ad" ezah="250"
+                        ezaw="300" id="div-gpt-ad-scholaruni-medrectangle-4-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:300px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[300, 250], 'scholaruni-medrectangle-4', 'ezslot_4', 146, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-medrectangle-4-0') };</script>
+                    </span></span>
+            </div>
+            <p>All master’s scholars would get maximum professional experience as they will be supported by Chevening’s
+                fully-funded scholarship. Along with that, scholars would be able to build the network extensively,
+                making International relationships, and experience UK culture. It is a highly competitive scholarship
+                and in order to be selected, it is crucial to be familiar with every phase of the process. After getting
+                a Chevening scholarship, a candidate explores beyond his expectations with plenty of best experiences.
+            </p>
+            <div class="code-block code-block-4" style="margin:8px 0;clear:both"><span
+                    id="ezoic-pub-ad-placeholder-147"></span><span
+                    class="ezoic-ad box-4 box-4147 adtester-container adtester-container-147"
+                    data-ez-name="scholaruni-box-4"><span class="ezoic-ad" ezah="250" ezaw="300"
+                        id="div-gpt-ad-scholaruni-box-4-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:300px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[300, 250], 'scholaruni-box-4', 'ezslot_6', 147, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-box-4-0') };</script>
+                    </span></span></div>
+            <div class="td-a-ad id_inline_ad1 id_ad_content-horiz-center"><span class="td-adspot-title">- Advertisement
+                    -</span></div>
+            <p><strong>Following are the phases to process the application;</strong></p>
+            <ul>
+                <li>Submission of the online application form.</li>
+                <li>Applying for the universities and securing admission</li>
+                <li>Interview</li>
+                <li>English Proficiency Test</li>
+            </ul>
+            <h3>Host Universities:</h3>
+            <ul>
+                <li>Eligible UK based universities for Chevening scholarships</li>
+            </ul>
+            <h3>Duration of the scholarship:</h3>
+            <ul>
+                <li>1 year</li>
+            </ul>
+            <h3>Degree Level:</h3>
+            <ul>
+                <li>Master’s Program</li>
+            </ul>
+            <h3>When applications open and close?</h3>
+            <p>Chevening scholarship applications open in September and close in November each year</p>
+            <h3>Value of the scholarship:</h3>
+            <ul>
+                <li>Tuition fee wavier</li>
+                <li>Economy class return tickets</li>
+                <li>Arrival allowance</li>
+                <li>Travel allowance</li>
+                <li>Reimbursement for the visa application fee.</li>
+                <li>Departure allowance</li>
+                <li>TB testing reimbursement up to £75</li>
+                <li>A monthly stipend for living and accommodation expenses.</li>
+            </ul>
+            <div class="adsbyir 970x250"></div>
+            <h3>What are the General Eligibility Criteria for the Applying?</h3>
+            <ul>
+                <li>A candidate must hold a Bachelor’s Degree before applying.</li>
+                <li>Must be a citizen of one of the Chevening eligible countries or territories</li>
+                <li>Must-Have at least two years of work experience</li>
+                <li>Must fulfill the criteria of English Language requirement</li>
+                <li>You can find more information about the eligibility criteria <a
+                        href="https://www.chevening.org/scholarships/who-can-apply/eligibility/"
+                        rel="noopener noreferrer" target="_blank">here</a>.</li>
+            </ul>
+            <h3>Work Experience:</h3>
+            <p>As an applicant, you will have to mention your work experience and your academic background along with
+                the leadership activities in which you have participated so far in the four required essays. After being
+                shortlisted, candidates will be called for an interview in which he/she will be asked regarding his four
+                essays.</p>
+            <p><strong>How many working hours required to be eligible for the Chevening scholarship?</strong></p>
+            <ul>
+                <li>A candidate’s working hours will be evaluated as 35 to 60 hours a week and 40 to 50 weeks a year. If
+                    a candidate reaches above the upper limit for full-time employment he will be ineligible. The number
+                    of minimum hours as work experience for the Chevening scholarship is 2800 hours in a time frame of
+                    two years.</li>
+                <li>If a candidate worked part-time, his experience will have a longer time period.</li>
+            </ul>
+            <p><strong>What work experience is required?</strong></p>
+            <ul>
+                <li>A candidate’s work experience should not be necessarily related to his field.</li>
+            </ul>
+            <p><strong>Does a candidate require evidence for work experience?</strong></p>
+            <ul>
+                <li>A candidate is not supposed to provide any evidence of the work experience.</li>
+            </ul>
+            <p>A candidate must have work experience that should be equivalent to the 2800 hours in the following ways;
+            </p>
+            <ul>
+                <li>Non-paid Internship</li>
+                <li>Freelancing</li>
+                <li>Volunteering</li>
+                <li>Part-time internship</li>
+                <li>Full-time internship</li>
+                <li>No age limit.</li>
+                <li>A candidate should hold work experience in the field of study.</li>
+                <li>Having a volunteering experience can add more chances for selection.</li>
+            </ul>
+            <div class="adsbyir 970x250"></div>
+            <h3>How to Choose a Course and University?</h3>
+            <p><strong>How you can select your field of interest and University?</strong></p>
+            <p>You have the choice to choose any of the 3 different eligible universities with different courses;  You
+                can choose either:</p>
+            <ul>
+                <li>Applying to the same course at 3 different universities.</li>
+                <li>Applying in the 3 different courses at 3 different universities</li>
+                <li>Applying in the 3 different courses at the same university.</li>
+            </ul>
+            <p><strong>What Degree Grading System you should mention in the application form?</strong></p>
+            <ul>
+                <li>A candidate should know his grade according to the UK system that is 2:1 or 2:2 equivalent to 12-14
+                    French system or equivalent to 10-11. You can learn further about it on the official website.</li>
+            </ul>
+            <p><strong>How can you know to which university you can apply?</strong></p>
+            <ul>
+                <li>On the official website, a candidate would get a brief description of the courses and eligible
+                    universities to apply to.</li>
+            </ul>
+            <p><strong>Does the candidate apply for a partner university or non-partner university?</strong></p>
+            <ul>
+                <li>A candidate can apply for both partners as well as a non-partner university but a partner the
+                    university is easy to access and understand therefore you secure your admission thereby requesting
+                    them to wait until the scholarship results announce.</li>
+            </ul>
+            <p><strong>How a candidate can choose a university?</strong></p>
+            <ul>
+                <li>If you had a 2:2 grade then see whether the university you are applying for accepts it or not.</li>
+                <li>A candidate should look for whether he belongs to the eligible country or not for Chevening
+                    University from the official website.</li>
+                <li>A candidate must check whether the eligible university offers the relevant course to his Bachelor’s
+                    degree.</li>
+                <li>Before applying to the university, a must check the national and international ranking of the
+                    university.</li>
+                <li>After applying to the university, a must look for the department’s reputation in terms of research
+                    and faculty.</li>
+                <li>According to the preference of the city, a candidate selects the university.</li>
+                <li>A candidate should apply earlier in at least one university in order to assure one choice of
+                    admission.</li>
+                <li>While applying to the university, a candidate should look into what programs the university offers,
+                    life at campus, inter-campus activities, and so on.</li>
+            </ul>
+            <div class="adsbyir 970x250"></div>
+            <p><strong>How a candidate should make a choice about the course of study?</strong></p>
+            <ul>
+                <li>A candidate should always apply for the relevant course of study.</li>
+                <li>A candidate should not take any irrelevant field according to the Bachelor’s degree as it will
+                    decrease the chances to get a scholarship in the UK.</li>
+                <li>While applying for the course, a candidate should consider how the chosen course is going to be fit
+                    with the UK’s action in his host country and a candidate would contribute that action after
+                    achieving the scholarship.</li>
+                <li>A candidate should always look for the course duration as Chevening scholarships’ time duration is 9
+                    to 12 months.</li>
+            </ul>
+            <p><strong>What if a candidate can’t find his field of study in the UK?</strong></p>
+            <ul>
+                <li>The aim of this scholarship is to create goodwill between the UK and my home country. If a
+                    candidate.</li>
+                <li>If a candidate doesn’t find his field of study, he should research articles regarding what the UK is
+                    contributing to his country and make a choice for the course according to that while filling out the
+                    application.</li>
+            </ul>
+            <h3>Tips for Chevening Essay Questions:</h3>
+            <p>Learn how to answer Chevening scholarship answer questions.</p>
+            <p>There are a total of 4 essays, each essay should be comprised of 500 words;</p>
+            <p><strong>1<sup>st</sup> essay is about candidates networking skills</strong></p>
+            <ul>
+                <li>A candidate should mention his networking and personal relations at the national as well as
+                    international levels.</li>
+                <li>He should talk about how he deals with the people in a variety of professions including government
+                    and international representatives, public authorities, and academia.</li>
+                <li>He should mention how he has been familiar with a different culture, age groups, socioeconomic
+                    classes.</li>
+                <li>He should provide a brief description of how long he has been involved in long-term relationships.
+                </li>
+                <li>He should elaborate on his communication skills in different areas.</li>
+            </ul>
+            <div class="adsbyir 970x250"></div>
+            <p><strong>2<sup>nd</sup> essay would ask you about your leadership qualities</strong></p>
+            <ul>
+                <li>A candidate should elaborate on the scenarios in which he played leadership roles.</li>
+                <li>How he managed good team management skills in different projects.</li>
+                <li>How he led community projects on a fixed budget.</li>
+                <li>How he considered the opinion of every member and negotiate among them.</li>
+                <li>How he worked with different personalities and led successful projects.</li>
+                <li>How his leadership project contributed in the long term and brought a positive change in his
+                    community.</li>
+            </ul>
+            <p><strong>3<sup>rd</sup> Essay would ask you about future career plans</strong></p>
+            <ul>
+                <li>A candidate should mention his career plans that show how he is going to support his community or
+                    country.</li>
+                <li>All Goals should be smart enough and realistic.</li>
+                <li>A candidate’s plans should include a social, academic, and professional approach.</li>
+                <li>A candidate must relate his skills, volunteer activities, and work experience.</li>
+            </ul>
+            <p><strong>4<sup>th</sup> essay would be about why you want to pursue your studies in the UK</strong></p>
+            <ul>
+                <li>The desire to study in the UK varies from person to person but reasons should be valid and
+                    appropriate.</li>
+                <li>For one year master’s, UK has good merit.</li>
+                <li>The UK holds the world’s best leading universities.</li>
+                <li>In academics, The UK is one of the top countries.</li>
+                <li>A candidate should mention his interest in cross-cultural understanding.</li>
+                <li>A candidate should show his interest in International research that would contribute to the
+                    community</li>
+            </ul>
+            <div class="adsbyir 970x250"></div>
+            <h3>Reference letters:</h3>
+            <ul>
+                <li>A candidate must submit 2 letters of reference.</li>
+                <li>A referee must know the applicant either professionally or in academics.</li>
+                <li>Reference letters would be verified by the British council once a candidate gets shortlisted.</li>
+            </ul>
+            <h3>Chevening Interviews 2021-22:</h3>
+            <ul>
+                <li>Once a candidate gets shortlisted, he is going to be invited for the interview in the British
+                    embassy of his city or town.</li>
+                <li>While interview, be confident and don’t be nervous as it is the stage that leads to the achievement
+                    of the scholarship.</li>
+                <li>From March 1<sup>st</sup> to April 30<sup>th</sup>, the Chevening scholarships interview 2021/2022
+                    will be conducted.</li>
+                <li>When a candidate gets selected, he receives an email, he must book his interview slot by responding
+                    to the email.</li>
+                <li> The interview will be taken place in person, face to face, only in exceptional situation interviews
+                    will be taken virtually.</li>
+            </ul>
+            <p>A candidate would be required to submit some mandatory documents by 22<sup>nd</sup> February 2021. The
+                required documents would be;</p>
+            <ul>
+                <li>Transcripts</li>
+                <li>Certificates of achievement</li>
+                <li>Two recommendation letters</li>
+                <li>A short essay on biography</li>
+            </ul>
+            <p>A candidate is supposed to bring the following documents;</p>
+            <ul>
+                <li>A passport or Identity card</li>
+            </ul>
+            <p>The interview will be taken place in English.</p>
+            <h3>How to prepare for the Chevening interview 2021-22?</h3>
+            <ul>
+                <li>A candidate must be certain about his career plans and must be specific to relate his plans with his
+                    country’s realities and field of study.</li>
+                <li>A candidate must be confident about his values, achievements, even about small leadership projects,
+                    and show that you made a great difference in your community.</li>
+                <li>A candidate should read his personal statement or essay earlier to the interview and prepare himself
+                    for the questions to be asked by the interviewer. If a candidate knows his application well, he
+                    would not be nervous and more confident.</li>
+                <li>A candidate must know about his course briefly and must be able to prove his passion for it.</li>
+                <li>Practicing for the interview would increase your chances of selection and release your stress
+                    beforehand.</li>
+                <li>Don’t be monotonous while interview, vary your tone, and be authentic.</li>
+                <li>A candidate should be dressed up appropriately and must be able to make eye contact with the
+                    interviewer.</li>
+                <li>A student must be prepared for the questions irrelevant to the course and goals, it might be the
+                    places students want to visit in the UK.</li>
+                <li>A candidate must be able to show interest in creating goodwill between the UK and his country.</li>
+            </ul>
+            <div class="adsbyir 970x250"></div>
+            <h4>How to Apply for Chevening Scholarship 2021-22 in the UK?</h4>
+            <p><strong>Find University and Course:</strong></p>
+            <ul>
+                <li>An applicant is supposed to find a course and an eligible university for a Chevening scholarship in
+                    the UK. You can find courses with a <a href="https://www.chevening.org/scholarships/find-a-course/"
+                        rel="noopener noreferrer" target="_blank">course browser</a> available on the official website.
+                </li>
+            </ul>
+            <p><strong>Sign up for Chevening Scholarship:</strong></p>
+            <p>An applicant is directed to create an account for applying for the Chevening scholarship. You can access
+                online applications<a href="https://www.chevening.org/apply/" rel="noopener noreferrer" target="_blank">
+                    here</a>.</p>
+            <p><strong>Let’s Begin the application Process:</strong></p>
+            <p>After opening the application, a student will be able to see the following;</p>
+            <p><strong>A university Application:</strong></p>
+            <p>An applicant is directed to apply for the field of interest or course in any of the 3 eligible
+                universities for Chevening international scholarship. An applicant doesn’t need an admission letter at
+                this stage. An applicant is not even bound to be consistent with the selected universities when an
+                applicant gets shortlisted for an interview, he/she may change his/her preference for the university.
+            </p>
+            <p><strong>Experience Letter:</strong></p>
+            <p>At the time of the application process, an applicant is not supposed to submit the experience letter. An
+                applicant can upload the certificates later.</p>
+            <p><strong>IETLS:</strong></p>
+            <p>You do not need to have IELTS at this point, once you are selected you will have a timeline to submit
+                IELTS by July, 14.</p>
+            <p>We strongly recommend submitting your IELTS test result by the End of November or at the start of
+                December. It will create a positive impact on your application. It will also strengthen your Chevening
+                application and therefore your chances of selection will be more. Secondly, you will have much time to
+                improve your score, if you could not achieve the desired band. One more thing you must also check the
+                university’s requirements before applying.</p>
+            <p><strong>See, what Chevening Scholarship UK Alumni suggest:</strong></p>
+            <p>Candidates should apply for 5 to 6 universities to secure as many admissions as they can because if a
+                candidate wouldn’t secure admission in the top 3 selected universities, his application might get
+                secured in the other 4 or 5 nominated universities.</p>
+            <p>A candidate must apply for a similar course in each university in the application form. It will propose
+                your study plan and your interest in professional development. Moreover, it will save you time as your
+                personal statement would not need mush changes for applying.</p>
+            <p>Kindly don’t fill out the application in a hurry, make a draft and review your application again and
+                again. Every component of the application must be relevant to each other.</p>
+            <p>Don’t wait for a deadline to submit an application, the system gets crashed in the last hours. So be
+                careful and submit the application before the deadline.</p>
+            <p>We are hoping that these guidelines will help you out to be a successful candidate.</p>
+            <p>Best of Luck!</p>
+            <div class="td-a-ad id_bottom_ad"><span class="td-adspot-title">- Advertisement -</span>
+                <div class="adsbyir 970x250"></div><span id="ezoic-pub-ad-placeholder-148"></span><span
+                    class="ezoic-ad medrectangle-1 medrectangle-1148 adtester-container adtester-container-148"
+                    data-ez-name="scholaruni-medrectangle-1"><span class="ezoic-ad" ezah="250"
+                        ezaw="300" id="div-gpt-ad-scholaruni-medrectangle-1-0"
+                        style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:300px">
+                        <script data-cfasync="false" data-ezscrex="false"
+                            style="display:none">if (typeof ez_ad_units != 'undefined') { ez_ad_units.push([[300, 250], 'scholaruni-medrectangle-1', 'ezslot_11', 148, '0', '0']) }; if (typeof __ez_fad_position != 'undefined') { __ez_fad_position('div-gpt-ad-scholaruni-medrectangle-1-0') };</script>
+                    </span><span class="reportline" style="width:300px;display:block;height:14px;margin:auto"><span
+                            style="text-align:center;font-size:smaller;float:left;line-height:normal"><a
+                                href="https://www.ezoic.com/what-is-ezoic/" rel="noopener noreferrer nofollow"
+                                style="cursor:pointer" target="_blank"><img alt="Ezoic" loading="lazy"
+                                    src="https://go.ezoic.net/utilcave_com/img/ezoic.png"
+                                    style="height:12px!important;padding:2px!important;border:0!important;cursor:pointer!important;width:58px!important;margin:0!important;box-sizing:content-box!important" /></a></span><span
+                            class="ez-report-ad-button"
+                            name="?pageview_id=bc67ea4a-a3ce-4f89-4c23-5eb06b51ebe2&amp;ad_position_id=148&amp;impression_group_id=scholaruni-medrectangle-1/2022-06-07/6775704537235708&amp;ad_size=300x250&amp;domain_id=212362&amp;url=https://scholarshipscorner.website/how-to-win-a-chevening-scholarship-uk/"
+                            style="cursor:pointer!important;font-size:12px!important;color:#a5a5a5;float:right;text-decoration:none!important;font-family:arial!important;line-height:normal">report
+                            this ad</span></span></span>
+            </div>
+        </div>
+    </div>

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y%@q)y(lx5y(j6_jnu9&aww6_=r(sbv@xff3-i(s0mqqyy2tn6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -83,6 +83,17 @@ WSGI_APPLICATION = 'scholaruni.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'scholaez_scholaruni_db',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'USER': 'scholaez_adminScholar',
+#         'PASSWORD': 'qwertpoiuy@123@',
 #     }
 # }
 

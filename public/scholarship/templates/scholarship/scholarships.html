@@ -85,31 +85,62 @@
               </a>
             </div>
             {% endfor %}
+            
+            
+            
+
+
+
+{% block pagination %}
+<div class="flex flex-row mt-3">
+    {% if scholarship_row.has_previous %}
+        <a href="?page=1">
+            ◀◀
+        </a>
+        <a href="?page={{scholarship_row.previous_page_number}}">
+            ◀️
+        </a>
+    {% endif%}
+
+    <a>{{scholarship_row.number}} of {{scholarship_row.paginator.num_pages}}</a>
+
+    {% if scholarship_row.has_next %}
+        <a href="?page={{scholarship_row.next_page_number}}">
+            ▶️
+        </a>
+        <a href="?page={{scholarship_row.paginator.num_pages}}">
+            ▶▶
+        </a>
+    {% endif%}
+
+  </div>
+{% endblock %}
 
             
-            <div class="col-md-12 col-12 gy-2 g-md-4">
-              <nav aria-label="...">
-                <ul class="pagination">
-                  {% if scholarship_row.has_previous %}
-                  <li class="page-item" >
+            <!--<div class="col-md-12 col-12 gy-2 g-md-4">-->
+            <!--  <nav aria-label="...">-->
+            <!--    <ul class="pagination">-->
+            <!--      {% if scholarship_row.has_previous %}-->
+            <!--      <li class="page-item" >-->
                     
-                    <a href="?page={{ scholarship_row.previous_page_number }}" class="page-link" style="color:#f95c39;">Previous</a>
+            <!--        <a href="?page={{ scholarship_row.previous_page_number }}" class="page-link" style="color:#f95c39;">Previous</a>-->
                     
-                  </li>
-                  {% endif %}
-                  {% with ''|center:scholarship_row.paginator.num_pages as range %}
-                  {% for _ in range %}
-                  <li class="page-item {% if scholarship_row.number == forloop.counter %} pactive {% endif %} "><a class="page-link {% if scholarship_row.number == forloop.counter %} pactive text-light {% endif %}" href="?page={{forloop.counter}}" style="{% if scholarship_row.number == forloop.counter %} {% else %} color:#f95c39 {% endif %}">{{forloop.counter}}</a></li>
-                  {% endfor %}
-                  {% endwith %}
-                  {% if scholarship_row.has_next %}
-                  <li class="page-item">
-                    <a class="page-link" href="?page={{ scholarship_row.next_page_number }}" style="color:#f95c39">Next</a>
-                  </li>
-                  {% endif %}
-                </ul>
-              </nav>
-            </div>
+            <!--      </li>-->
+            <!--      {% endif %}-->
+                  
+            <!--      {% with ''|center:scholarship_row.paginator.num_pages as range %}-->
+            <!--      {% for _ in range %}-->
+            <!--      <li class="page-item {% if scholarship_row.number == forloop.counter %} pactive {% endif %} "><a class="page-link {% if scholarship_row.number == forloop.counter %} pactive text-light {% endif %}" href="?page={{forloop.counter}}" style="{% if scholarship_row.number == forloop.counter %} {% else %} color:#f95c39 {% endif %}">{{forloop.counter}}</a></li>-->
+            <!--      {% endfor %}-->
+            <!--      {% endwith %}-->
+            <!--      {% if scholarship_row.has_next %}-->
+            <!--      <li class="page-item">-->
+            <!--        <a class="page-link" href="?page={{ scholarship_row.next_page_number }}" style="color:#f95c39">Next</a>-->
+            <!--      </li>-->
+            <!--      {% endif %}-->
+            <!--    </ul>-->
+            <!--  </nav>-->
+            <!--</div>-->
           </div>
 
 

@@ -32,7 +32,7 @@ a {
 .title-text {
 
     width: 100%;
-    border-bottom: 1px solid var(--line) !important;
+    border-bottom: 5px solid var(--line) !important;
     line-height: 0.5em;
     margin: 10px 0 0px 0;
 }

@@ -31,7 +31,7 @@ def linkGenerationScholarship():
     links = []
     for i in range(1,20):
         print(str(i)+" page")
-        url = "https://opportunitiescorners.info/category/scholarships/page/"+str(i)+"/"
+        url = f"https://opportunitiescorners.info/category/fully-funded-scholarships/page/{i}/"
         soup = get_data(url)
         div = soup.find("div",class_="td-ss-main-content")
         block = div.find_all("div", class_="td-block-span6")

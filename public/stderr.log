@@ -863,3 +863,3022 @@ Not Found: /static/static/ckeditor/ckeditor-init.js
 Not Found: /dashboard
 Not Found: /static/static/ckeditor/ckeditor-init.js
 Not Found: /static/static/ckeditor/ckeditor/ckeditor.js
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2018/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //media/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 196, in dashboard
+    send_mail(
+NameError: name 'send_mail' is not defined
+OSError: LSAPI: Socket read/write error
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 197, in dashboard
+    send_mail(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    return mail.send()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/opt/alt/python38/lib64/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/alt/python38/lib64/python3.8/smtplib.py", line 341, in connect
+    (code, msg) = self.getreply()
+  File "/opt/alt/python38/lib64/python3.8/smtplib.py", line 398, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 65, in HomeView
+    subsc(request,'contact')
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 24, in subsc
+    forms.save(commit=True)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/forms/models.py", line 466, in save
+    self.instance.save()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/base.py", line 791, in save_base
+    post_save.send(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 170, in send
+    return [
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/dispatch/dispatcher.py", line 171, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/scholaez/scholaruni_website/scholarship/signals.py", line 15, in createSubscriber
+    html_content = render_to_string("email.html", {})
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: email.html
+Not Found: /static/static/js/popper.min.js.map
+Not Found: /static/static/js/bootstrap.min.js.map
+Not Found: /static/static/js/popper.min.js.map
+Not Found: /static/static/js/bootstrap.min.js.map
+Not Found: /static/static/js/popper.min.js.map
+Not Found: /static/static/js/bootstrap.min.js.map
+Not Found: /static/static/js/popper.min.js.map
+Not Found: /static/static/js/bootstrap.min.js.map
+Not Found: /static/static/js/bootstrap.min.js.map
+Not Found: /wordpress/
+Not Found: /favicon.ico
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 125, in __call__
+    response = self.process_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView, dashboard
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 19, in <module>
+    from scraping import oppsql_intern
+  File "/home/scholaez/scholaruni_website/scraping/oppsql_intern.py", line 2, in <module>
+    from scraping import opp_intern_dataCollect
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <module>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <listcomp>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 399: ordinal not in range(128)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 125, in __call__
+    response = self.process_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView, dashboard
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 19, in <module>
+    from scraping import oppsql_intern
+  File "/home/scholaez/scholaruni_website/scraping/oppsql_intern.py", line 2, in <module>
+    from scraping import opp_intern_dataCollect
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <module>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <listcomp>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 399: ordinal not in range(128)
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView, dashboard
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 19, in <module>
+    from scraping import oppsql_intern
+  File "/home/scholaez/scholaruni_website/scraping/oppsql_intern.py", line 2, in <module>
+    from scraping import opp_intern_dataCollect
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <module>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <listcomp>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 399: ordinal not in range(128)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 125, in __call__
+    response = self.process_request(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 592, in resolve
+    for pattern in self.url_patterns:
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 634, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 627, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholaruni/urls.py", line 8, in <module>
+    path('', include('scholarship.urls'))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/scholaez/scholaruni_website/scholarship/urls.py", line 2, in <module>
+    from .views import ScholarshipDetailView, ScholarshipView,InternshipView,search, about, about, createMessage,HomeView, InternshipDetailView, dashboard
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 19, in <module>
+    from scraping import oppsql_intern
+  File "/home/scholaez/scholaruni_website/scraping/oppsql_intern.py", line 2, in <module>
+    from scraping import opp_intern_dataCollect
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <module>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/scholaruni_website/scraping/opp_intern_dataCollect.py", line 15, in <listcomp>
+    country_names = [line.rstrip() for line in file]
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 399: ordinal not in range(128)
+__________
+1652371566.8936074
+__________
+__________
+1652371576.8087902
+__________
+1 page
+False
+False
+False
+False
+False
+False
+2 page
+False
+False
+False
+False
+False
+False
+3 page
+False
+False
+False
+False
+False
+False
+4 page
+False
+False
+False
+False
+False
+False
+5 page
+False
+False
+False
+False
+False
+False
+6 page
+False
+False
+False
+False
+False
+False
+7 page
+False
+False
+False
+False
+False
+False
+8 page
+False
+False
+False
+False
+False
+False
+9 page
+False
+False
+False
+False
+False
+False
+10 page
+False
+False
+False
+False
+False
+False
+11 page
+False
+False
+False
+False
+False
+False
+12 page
+False
+False
+False
+False
+False
+False
+13 page
+False
+True
+db connect
+https://opportunitiescorners.info/scholarships-to-study-in-belgium-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/work-with-study-in-germany/
+add
+no decompose pound
+https://opportunitiescorners.info/european-scholarships-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/highest-paid-scholarships-in-the-world/
+add
+no decompose pound
+https://opportunitiescorners.info/michigan-university-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/new-zealand-government-scholarship-2022/
+add
+https://opportunitiescorners.info/helmut-schmidt-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/motivation-letter-for-scholarship-application/
+add
+https://opportunitiescorners.info/great-uk-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/big-scholarship-programs-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/canadian-public-universities-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/foreign-government-scholarships-2022/
+add
+https://opportunitiescorners.info/list-of-scholarships-deadline-in-may/
+add
+https://opportunitiescorners.info/unisa-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/canada-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/study-and-work-in-germany-bachelors-master-mba-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/europe-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/turkish-universities-without-ielts/
+add
+https://opportunitiescorners.info/king-abdulaziz-scholarship/
+add
+https://opportunitiescorners.info/scotland-government-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/weekly-opportunities-update/
+add
+https://opportunitiescorners.info/highest-paid-canadian-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/germany-scholarships-for-2022/
+add
+no decompose pound
+https://opportunitiescorners.info/georgia-government-scholarships-2022/
+add
+https://opportunitiescorners.info/usa-scholarships-without-gre/
+add
+https://opportunitiescorners.info/u-of-t-scholarships/
+add
+https://opportunitiescorners.info/chulalongkorn-university-scholarship/
+add
+https://opportunitiescorners.info/schwarzman-scholarship-2021/
+add
+no decompose pound
+https://opportunitiescorners.info/scholarships-to-study-in-canadian-universities/
+add
+https://opportunitiescorners.info/uk-universities-without-ielts-2/
+add
+https://opportunitiescorners.info/sky-global-yunus-emre-summer-exchange-program/
+add
+https://opportunitiescorners.info/mext-japanese-government-scholarship-2023/
+add
+https://opportunitiescorners.info/italy-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/no-ielts-canadian-universities/
+add
+https://opportunitiescorners.info/poland-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/bachelor-master-phd-scholarships-in-france/
+add
+no decompose pound
+https://opportunitiescorners.info/norway-scholarships-for-international-students/
+add
+https://opportunitiescorners.info/netherlands-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/top-scholarships-in-canada/
+add
+no decompose pound
+https://opportunitiescorners.info/australian-universities-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/scholarships-deadline-in-april/
+add
+no decompose pound
+https://opportunitiescorners.info/masters-scholarships-in-canada/
+add
+no decompose pound
+https://opportunitiescorners.info/vinuniversity-scholarship-in-vietnam/
+add
+https://opportunitiescorners.info/study-in-austria-on-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/study-in-german-universities-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/polish-government-scholarships/
+add
+https://opportunitiescorners.info/study-in-saudi-arabia-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/canada-universities-without-ielts/
+add
+https://opportunitiescorners.info/new-zealand-scholarships-for-international-students/
+add
+https://opportunitiescorners.info/scholarships-in-switzerland-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/undisclosed-scholarships-in-canada/
+add
+https://opportunitiescorners.info/study-in-uk-universities/
+add
+https://opportunitiescorners.info/scholarships-in-france-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/study-in-canadian-universities/
+add
+no decompose pound
+https://opportunitiescorners.info/iu-scholarship/
+add
+https://opportunitiescorners.info/usa-scholarships-for-international-students/
+add
+https://opportunitiescorners.info/singapore-scholarships/
+add
+https://opportunitiescorners.info/most-popular-canadian-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/kaist-scholarship/
+add
+https://opportunitiescorners.info/alberta-university-canada-scholarship/
+add
+https://opportunitiescorners.info/adb-scholarship-program/
+add
+https://opportunitiescorners.info/scholarships-for-canada-2022/
+add
+https://opportunitiescorners.info/bachelor-masters-phd-scholarships-in-germany/
+add
+https://opportunitiescorners.info/600-scholarships-in-25-universities-of-saudi-arabia/
+add
+https://opportunitiescorners.info/schengen-countries-scholarships-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/bachelors-masters-phd-scholarships-in-canada-2022/
+add
+no decompose pound
+https://opportunitiescorners.info/bachelors-masters-and-phd-scholarships/
+add
+https://opportunitiescorners.info/king-abdullah-university-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/apply-for-scholarships-in-canada/
+add
+no decompose pound
+https://opportunitiescorners.info/scholarships-in-south-korea-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/canadas-pm-welcome-1-3-million-in-2022-24/
+add
+no decompose pound
+https://opportunitiescorners.info/scholarship-deadlines-in-march/
+add
+no decompose pound
+https://opportunitiescorners.info/snu-scholarship-south-korea/
+add
+__________
+1652371791.792656
+__________
+__________
+1652372384.2904449
+__________
+55 https://opportunitiescorners.info/sky-global-internship-program/
+1 page
+False
+False
+False
+False
+False
+False
+2 page
+False
+False
+True
+db connect
+https://opportunitiescorners.info/world-food-program-internship/
+add
+no decompose found
+https://opportunitiescorners.info/internships-volunteer-opportunities/
+add
+no decompose found
+https://opportunitiescorners.info/local-international-summer-internship-in-turkey/
+add
+https://opportunitiescorners.info/united-nations-volunteer-program/
+add
+no decompose found
+https://opportunitiescorners.info/fifa-2022-volunteer-registration/
+add
+no decompose found
+https://opportunitiescorners.info/internships-for-students/
+add
+https://opportunitiescorners.info/oist-japanese-internship/
+https://opportunitiescorners.info/twitter-internship/
+add
+__________
+1652372400.9107578
+__________
+63 https://opportunitiescorners.info/world-food-program-internship/
+1 page
+True
+db connect
+__________
+1652372406.7374532
+__________
+1 page
+True
+db connect
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/fully-funded-south-korean-scholarships/
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/un-volunteers-program-2021/
+Not Found: /internships/un-internship/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/wfp-internship/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/internships-in-canada/
+Not Found: /internships/list-of-upcoming-internships/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/unchr-internship/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/korean-government-scholarships/
+Not Found: /internships/alberta-university-scholarships-in-canada/
+Not Found: /internships/study-in-france-without-ielts/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/scholarships-for-international-students-in-canada/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/king-abdulaziz-scholarship-2022/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/alberta-university-scholarships-in-canada/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /favicon.ico
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/government-of-romania-scholarships/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/un-internship/
+Not Found: /internships/unchr-internship/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/wfp-internship/
+Not Found: /internships/diploma-in-canada/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/study-in-japan-without-ielts/
+Not Found: /internships/study-in-italy-without-ielts/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/bachelors-masters-phd-scholarships-in-canada-2022/
+Not Found: /internships/scholarships-in-south-korea-for-international-students/
+Not Found: /internships/korean-government-scholarships/
+Not Found: /internships/list-of-scholarships-without-ielts-2022/
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/united-nations-internship/
+Not Found: /internships/netherlands-scholarships-without-ielts/
+Not Found: /internships/masters-scholarships-in-canada/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/usa-scholarships-without-gre/
+Not Found: /internships/study-in-canadian-universities/
+Not Found: /internships/diploma-in-canada/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/cern-switzerland-internship-program/
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /internships/desy-summer-student-program/
+Not Found: /internships/fully-funded-volunteer-internship-programs/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/sky-global-internship-program/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/government-of-azerbaijan-scholarship/
+Not Found: /internships/korean-government-scholarships/
+Not Found: /internships/2022-2023-scholarships-for-canada/
+Not Found: /internships/apply-for-work-permit-after-study-in-canada/
+Not Found: /internships/scholarships-for-international-students-in-canada/
+Not Found: /internships/study-and-work-in-canada-without-ielts/
+Not Found: /internships/study-in-canada-scholarships/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/netherlands-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+OSError: LSAPI: Socket read/write error
+Not Found: /0YV7eTOyy5ZXMpF10GvzlYk
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/king-abdullah-university-scholarship/
+Not Found: /internships/scholarships-to-study-in-saudi-arabia/
+Not Found: /internships/fully-funded-south-korean-scholarships/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /wordpress/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/internships-in-canada/
+Not Found: /internships/list-of-upcoming-internships/
+Not Found: /internships/un-volunteers-program-2021/
+Not Found: /internships/fifa-2022-volunteer-registration/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/fully-funded-scholarships-to-study-in-canada/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/high-acceptance-rate-universities-in-canada/
+__________
+1652539170.4592113
+__________
+63 https://opportunitiescorners.info/world-food-program-internship/
+1 page
+True
+db connect
+__________
+1652539174.6694114
+__________
+1 page
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/italy-government-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/entrance-scholarships-in-canada/
+add
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/600-scholarships-in-25-universities-of-saudi-arabia/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /internships/fully-funded-volunteer-internship-programs/
+Not Found: /internships/king-abdulaziz-scholarship-2022/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/study-in-japan-without-ielts/
+Not Found: /internships/diploma-in-canada/
+Not Found: /.well-known/traffic-advice
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /phpinfos.php
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2018/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //media/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /internships/bachelors-masters-phd-scholarships-in-canada-2022/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/fully-funded-scholarships-to-study-in-canada/
+Not Found: /.env
+Not Found: /xmlrpc.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /internships/2022-2023-scholarships-for-canada/
+Not Found: /internships/alberta-university-scholarships-in-canada/
+Not Found: /internships/apply-for-work-permit-after-study-in-canada/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/cern-switzerland-internship-program/
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /internships/desy-summer-student-program/
+Not Found: /internships/diploma-in-canada/
+Not Found: /internships/european-scholarships-without-ielts/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/fifa-2022-volunteer-registration/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/fully-funded-scholarships-to-study-in-canada/
+Not Found: /internships/fully-funded-south-korean-scholarships/
+Not Found: /internships/fully-funded-volunteer-internship-programs/
+Not Found: /internships/government-of-azerbaijan-scholarship/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/government-of-romania-scholarships/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/internships-in-canada/
+Not Found: /internships/king-abdulaziz-scholarship-2022/
+Not Found: /internships/korean-government-scholarships/
+Not Found: /internships/list-of-upcoming-internships/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/scholarships-for-international-students-in-canada/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/sky-global-internship-program/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/study-and-work-in-canada-without-ielts/
+Not Found: /internships/study-in-canada-scholarships/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/un-internship/
+Not Found: /internships/un-volunteers-program-2021/
+Not Found: /internships/unchr-internship/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/united-nations-internship/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /internships/wfp-internship/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/netherlands-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /admin
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /admin
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /admin
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /admin
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/study-in-france-without-ielts/
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/masters-scholarships-in-canada/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/european-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/highest-paid-canadian-scholarships/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/apply-for-work-permit-after-study-in-canada/
+Not Found: /internships/list-of-scholarships-without-ielts-2022/
+Not Found: /internships/scholarships-in-south-korea-for-international-students/
+__________
+1652786871.5583086
+__________
+63 https://opportunitiescorners.info/world-food-program-internship/
+1 page
+True
+db connect
+__________
+1652786875.6106262
+__________
+1 page
+False
+False
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/singapore-government-scholarship-2023/
+add
+no decompose pound
+https://opportunitiescorners.info/fully-funded-scholarships-in-australia/
+add
+https://opportunitiescorners.info/malaysian-international-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/6000-free-scholarships-without-ielts/
+add
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/netherlands-scholarships-without-ielts/
+Not Found: /administrator/index.php
+Not Found: /administrator/index.php
+Not Found: /administrator/index.php
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/germany-scholarships-for-2022/
+Not Found: /internships/highest-paid-canadian-scholarships/
+Not Found: /internships/scholarships-in-australia-for-international-students/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/bachelor-master-phd-scholarships-in-france/
+Not Found: /internships/italy-scholarships-for-international-students/
+Not Found: /internships/netherlands-scholarships-for-international-students/
+Not Found: /internships/un-internship/
+Not Found: /internships/norway-scholarships-for-international-students/
+Not Found: /internships/poland-scholarships-for-international-students/
+Not Found: /internships/study-in-belgium-without-ielts/
+Not Found: /internships/kaist-scholarship/
+Not Found: /internships/rotary-peace-scholarship/
+Not Found: /wordpress
+Not Found: /Wordpress
+Not Found: /WORDPRESS
+Not Found: /WordPress
+Not Found: /wp
+Not Found: /Wp
+Not Found: /WP
+Not Found: /old
+Not Found: /Old
+Not Found: /OLD
+Not Found: /oldsite
+Not Found: /new
+Not Found: /New
+Not Found: /NEW
+Not Found: /wp-old
+Not Found: /2020
+Not Found: /2019
+Not Found: /2018
+Not Found: /backup
+Not Found: /test
+Not Found: /Test
+Not Found: /TEST
+Not Found: /demo
+Not Found: /bc
+Not Found: /www
+Not Found: /WWW
+Not Found: /Www
+Not Found: /2021
+Not Found: /main
+Not Found: /old-site
+Not Found: /bk
+Not Found: /Backup
+Not Found: /BACKUP
+Not Found: /SHOP
+Not Found: /Shop
+Not Found: /shop
+Not Found: /bak
+Not Found: /sitio
+Not Found: /bac
+Not Found: /sito
+Not Found: /site
+Not Found: /Site
+Not Found: /SITE
+Not Found: /blog
+Not Found: /BLOG
+Not Found: /Blog
+Not Found: /favicon.ico
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /internships/top-scholarships-in-canada/
+Not Found: /internships/cern-switzerland-internship-program/
+Not Found: /internships/king-abdulaziz-scholarship/
+Not Found: /internships/daad-scholarship-2020/
+Not Found: /internships/motivation-letter-for-scholarship-application/
+Not Found: /internships/study-abroad-without-ielts/
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/oist-japanese-internship/
+Not Found: /internships/study-in-new-zealand-without-ielts/
+Not Found: /internships/foreign-government-scholarships-2022/
+Not Found: /internships/canada-universities-without-ielts/
+Not Found: /internships/study-in-canadian-universities/
+Not Found: /internships/universities-in-canada-without-ielts/
+Not Found: /internships/siit-scholarship-2020-in-thailand/
+Not Found: /internships/adb-scholarship-program/
+Not Found: /internships/big-scholarship-programs-without-ielts/
+Not Found: /internships/day-1-cpt-universities-in-usa/
+Not Found: /internships/study-in-usa-without-ielts-and-toefl/
+Not Found: /internships/study-in-china-without-ielts/
+Not Found: /internships/study-in-europe-without-ielts/
+Not Found: /internships/universities-without-ielts/
+Not Found: /internships/scholarships-in-france-for-international-students/
+Not Found: /internships/british-council-free-online-courses/
+Not Found: /internships/turkish-universities-without-ielts/
+Not Found: /internships/fully-funded-european-scholarships/
+Not Found: /internships/iu-scholarship/
+Not Found: /internships/list-of-universities-without-ielts-requirements/
+Not Found: /internships/new-zealand-scholarships-without-ielts/
+Not Found: /internships/study-in-german-universities-without-ielts/
+Not Found: /internships/usa-scholarships-for-international-students/
+Not Found: /internships/fully-funded-scholarships-in-europe/
+Not Found: /internships/hungary-scholarships-without-ielts/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/national-university-of-malaysia-scholarship/
+Not Found: /internships/singapore-scholarships-without-ielts/
+Not Found: /internships/study-in-australia-without-ielts/
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/spanish-scholarships-without-ielts/
+Not Found: /internships/study-in-france-without-ielts/
+Not Found: /internships/study-in-italy-without-ielts/
+Not Found: /internships/study-in-norway-free/
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/study-in-poland-without-ielts/
+Not Found: /internships/study-in-spain-without-ielts/
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/australian-universities-without-ielts/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/chulalongkorn-university-scholarship/
+Not Found: /internships/georgia-government-scholarships-2022/
+Not Found: /internships/internships-volunteer-opportunities/
+Not Found: /internships/masters-scholarships-in-canada/
+Not Found: /internships/no-ielts-canadian-universities/
+Not Found: /internships/scholarships-deadline-in-april/
+Not Found: /internships/scholarships-to-study-in-canadian-universities/
+Not Found: /internships/schwarzman-scholarship-2021/
+Not Found: /internships/bachelors-masters-phd-scholarships-in-canada-2022/
+Not Found: /internships/u-of-t-scholarships/
+Not Found: /internships/uk-universities-without-ielts-2/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/usa-scholarships-without-gre/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/europe-scholarships-for-international-students/
+Not Found: /internships/british-council-free-online-courses/
+Not Found: /internships/uk-universities-without-ielts/
+Not Found: /internships/italy-government-scholarship/
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Not Found: /internships/study-in-japan-without-ielts/
+Not Found: /.env
+Not Found: /internships/university-of-ottawa-scholarships/
+__________
+1652872325.4008656
+__________
+63 https://opportunitiescorners.info/world-food-program-internship/
+1 page
+True
+db connect
+__________
+1652872335.0428183
+__________
+1 page
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/university-of-melbourne-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/fully-funded-scholarships/
+add
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/unchr-internship/
+Not Found: /favicon.ico
+Not Found: /internships/government-of-azerbaijan-scholarship/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/fifa-2022-volunteer-registration/
+Not Found: /internships/internships-in-canada/
+Not Found: /internships/2022-2023-scholarships-for-canada/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/netherlands-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+Not Found: /internships/study-in-canadian-universities/
+Not Found: /contact/contact/
+Not Found: /about/about/
+Not Found: /scholarships/scholarships/
+Not Found: /internships/internships/
+Not Found: /internships/king-abdullah-university-scholarship/
+Not Found: /internships/scholarships-to-study-in-saudi-arabia/
+Not Found: /internships/top-scholarships-in-canada/
+Not Found: /humans.txt
+Not Found: /ads.txt
+Not Found: /internships/list-of-upcoming-internships/
+Not Found: /internships/desy-summer-student-program/
+Not Found: /internships/study-in-europe-without-ielts/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/study-in-canadian-universities/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/study-in-new-zealand-without-ielts/
+Not Found: /internships/universities-without-ielts/
+Not Found: /internships/siit-scholarship-2020-in-thailand/
+Not Found: /internships/united-nations-internship/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/usa-scholarships-without-gre/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+Not Found: /internships/government-of-germany-scholarships/
+Not Found: /internships/helmut-schmidt-scholarship/
+Not Found: /internships/malaysian-international-scholarship/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/singapore-government-scholarship-2023/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/chulalongkorn-university-scholarship/
+Not Found: /internships/australian-universities-without-ielts/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/alberta-university-scholarships-in-canada/
+Not Found: /internships/high-acceptance-rate-universities-in-canada/
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/600-scholarships-in-25-universities-of-saudi-arabia/
+Not Found: /internships/u-of-t-scholarships/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/usa-scholarships-for-international-students/
+Internal Server Error: /scholarship/eth-zurich-summer-internship
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /internships/sky-global-internship-program/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/government-of-germany-scholarships/
+Not Found: /internships/helmut-schmidt-scholarship/
+Not Found: /internships/italy-government-scholarship/
+Not Found: /internships/malaysian-international-scholarship/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/motivation-letter-for-scholarship-application/
+Not Found: /internships/national-university-of-malaysia-scholarship/
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Not Found: /internships/scholarships-in-australia-for-international-students/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/singapore-government-scholarship-2023/
+Not Found: /internships/singapore-scholarships-without-ielts/
+Not Found: /internships/study-in-australia-without-ielts/
+Not Found: /internships/bachelors-masters-phd-scholarships-in-canada-2022/
+Not Found: /internships/list-of-scholarships-without-ielts-2022/
+Not Found: /internships/scholarships-in-south-korea-for-international-students/
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/uk-universities-without-ielts-2/
+Not Found: /internships/king-abdulaziz-scholarship/
+Not Found: /internships/adb-scholarship-program/
+Not Found: /internships/georgia-government-scholarships-2022/
+Not Found: /internships/scholarships-deadline-in-april/
+Not Found: /internships/canada-universities-without-ielts/
+Not Found: /internships/un-volunteers-program-2021/
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /internships/iu-scholarship/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/new-zealand-scholarships-without-ielts/
+Not Found: /internships/schwarzman-scholarship-2021/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/oist-japanese-internship/
+Not Found: /internships/scholarships-for-international-students-in-canada/
+Not Found: /internships/norway-scholarships-for-international-students/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: //feed/
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //2021/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/who-internship-program/
+Not Found: /.env
+Not Found: /internships/rotary-peace-scholarship/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/fully-funded-volunteer-internship-programs/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/study-in-italy-without-ielts/
+Not Found: /kkFN2y9a9K1Hf0IeN5T1UF8sv
+Not Found: /.env
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/study-in-japan-without-ielts/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /.env
+Not Found: //feed/
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //2021/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/germany-scholarships-for-2022/
+Not Found: /internships/study-in-canada-scholarships/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/netherlands-scholarships-for-international-students/
+Not Found: /internships/study-in-canadian-universities/
+Not Found: /internships/italy-scholarships-for-international-students/
+Not Found: /internships/scholarships-for-international-students-in-canada/
+Not Found: /internships/national-university-of-malaysia-scholarship/
+Not Found: /favicon.ico
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/korean-government-scholarships/
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/king-abdulaziz-scholarship-2022/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /favicon.ico
+Not Found: /radio.txt
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/italy-government-scholarship/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/rotary-peace-scholarship/
+Not Found: /internships/government-of-germany-scholarships/
+Not Found: /favicon.ico
+Not Found: /internships/government-of-germany-scholarships/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /.env
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /internships/fully-funded-scholarships-to-study-in-canada/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/king-abdulaziz-scholarship-2022/
+Not Found: /internships/diploma-in-canada/
+Not Found: /favicon.ico
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/diploma-in-canada/
+Not Found: /internships/study-in-german-universities-without-ielts/
+Not Found: /internships/government-of-romania-scholarships/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/600-scholarships-in-25-universities-of-saudi-arabia/
+Internal Server Error: /scholarship/eth-zurich-summer-internship
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /internships/fully-funded-scholarships-in-europe/
+Not Found: /internships/national-university-of-malaysia-scholarship/
+Not Found: /internships/study-in-china-without-ielts/
+Not Found: /internships/study-in-france-without-ielts/
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/norway-scholarships-for-international-students/
+Not Found: /internships/study-in-belgium-without-ielts/
+Not Found: /internships/top-scholarships-in-canada/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/masters-scholarships-in-canada/
+Not Found: /internships/british-council-free-online-courses/
+Not Found: /internships/apply-for-work-permit-after-study-in-canada/
+Not Found: /internships/who-internship-program/
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/unchr-internship/
+Not Found: /internships/un-internship/
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /favicon.ico
+Internal Server Error: /scholarship/united-nations-volunteer-program
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Internal Server Error: /scholarship/fifa-2022-volunteer-registration
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 151, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 53, in search
+    random.shuffle(internship)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib64/python3.8/random.py", line 307, in shuffle
+    x[i], x[j] = x[j], x[i]
+TypeError: 'QuerySet' object does not support item assignment
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/fully-funded-scholarships-to-study-in-canada/
+Not Found: /internships/study-in-france-without-ielts/
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /internships/no-ielts-canadian-universities/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/foreign-government-scholarships-2022/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/wfp-internship/
+Not Found: /.env
+Not Found: /internships/schwarzman-scholarship-2021/
+Not Found: /internships/study-in-australia-without-ielts/
+Not Found: /internships/study-and-work-in-canada-without-ielts/
+Not Found: /internships/british-council-free-online-courses/
+Not Found: /internships/uk-universities-without-ielts/
+Not Found: /internships/oist-japanese-internship/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/study-in-france-without-ielts/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/poland-scholarships-for-international-students/
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /internships/internships-volunteer-opportunities/
+__________
+1653236329.258773
+__________
+63 https://opportunitiescorners.info/world-food-program-internship/
+1 page
+False
+True
+db connect
+no decompose found
+https://opportunitiescorners.info/cern-administrative-student-program/
+add
+__________
+1653236334.9422848
+__________
+1 page
+False
+False
+False
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/british-council-scholarships-for-international-students-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/turkey-government-success-scholarship/
+add
+no decompose pound
+https://opportunitiescorners.info/study-in-switzerland-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/qatar-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/canada-diploma-scholarships/
+add
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /internships/scholarships-to-study-in-canadian-universities/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/apply-for-work-permit-after-study-in-canada/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/study-in-norway-free/
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/desy-summer-student-program/
+Not Found: /internships/study-in-japan-without-ielts/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/fully-funded-volunteer-internship-programs/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/king-abdulaziz-scholarship/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/study-abroad-without-ielts/
+Not Found: /internships/study-in-poland-without-ielts/
+Not Found: /internships/snu-scholarship-south-korea/
+Not Found: /internships/study-in-german-universities-without-ielts/
+Not Found: /internships/motivation-letter-for-scholarship-application/
+Not Found: /internships/scholarships-in-france-for-international-students/
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /internships/bachelors-masters-phd-scholarships-in-canada-2022/
+Not Found: /internships/european-scholarships-without-ielts/
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/canadian-government-scholarships/
+Not Found: /internships/what-is-an-english-proficiency-language-certificate/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/king-abdulaziz-scholarship-2022/
+Not Found: /internships/internships-for-students/
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Not Found: /internships/qatar-scholarships-for-international-students/
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/united-nations-volunteer-program.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/internships-volunteer-opportunities.jpg
+Not Found: /favicon.ico
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+__________
+1653300275.1518593
+__________
+64 https://opportunitiescorners.info/cern-administrative-student-program/
+1 page
+True
+db connect
+__________
+1653300278.8650043
+__________
+1 page
+True
+db connect
+Not Found: /internships/how-to-make-a-cv/
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /static/media/uploads/post_images/internship/fifa-2022-volunteer-registration.jpg
+Not Found: /internships/how-to-write-a-recommendation-letter/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/new-zealand-scholarships-without-ielts/
+Not Found: /internships/study-in-new-zealand-without-ielts/
+Not Found: /internships/usa-scholarships-for-international-students/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/2022-2023-scholarships-for-canada/
+Not Found: /internships/internships-volunteer-opportunities/
+Not Found: /internships/alberta-university-scholarships-in-canada/
+Not Found: /internships/netherlands-scholarships-without-ielts/
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/day-1-cpt-universities-in-usa/
+Not Found: /internships/high-acceptance-rate-universities-in-canada/
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.txt
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/internships-in-canada/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/uk-universities-without-ielts-2/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /atom.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml.gz
+Not Found: /internships/cern-switzerland-internship-program/
+Not Found: /internships/canada-universities-without-ielts/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemaps.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap_index.xml
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/un-internship/
+Not Found: /internships/bachelor-master-phd-scholarships-in-france/
+Not Found: /internships/study-in-german-universities-without-ielts/
+Not Found: /internships/sky-global-internship-program/
+Not Found: /internships/government-of-romania-scholarships/
+Not Found: /internships/study-in-australia-without-ielts/
+Internal Server Error: /scholarship/eth-zurich-summer-internship
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 155, in ScholarshipDetailView
+    scholarship = Scholarships.objects.get(slug=slug)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+scholarship.models.Scholarships.DoesNotExist: Scholarships matching query does not exist.
+Not Found: /internships/scholarships-in-australia-for-international-students/
+Not Found: /internships/italy-scholarships-for-international-students/
+Not Found: /internships/u-of-t-scholarships/
+Not Found: /internships/bachelor-master-phd-scholarships-in-france/
+Not Found: /internships/european-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/scholarships-to-study-in-canadian-universities/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/europe-scholarships-for-international-students/
+Not Found: /internships/study-in-belgium-without-ielts/
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/norway-scholarships-for-international-students/
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Not Found: /.env
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/british-council-free-online-courses/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/alberta-university-scholarships-in-canada/
+Not Found: /internships/university-of-ottawa-scholarships/
+Not Found: /internships/scholarships-in-italy-without-ielts/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Not Found: /internships/united-nations-internship/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/no-ielts-canadian-universities/
+Not Found: /internships/masters-scholarships-in-canada/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.txt
+Not Found: /internships/scholarships-in-denmark-without-ielts/
+Not Found: /internships/singapore-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-poland-without-ielts/
+Not Found: /internships/600-scholarships-in-25-universities-of-saudi-arabia/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /atom.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml.gz
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemaps.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap_index.xml
+Not Found: /internships/scholarships-in-germany-without-ielts/
+Not Found: /internships/schwarzman-scholarship-2021/
+Not Found: /internships/netherlands-scholarships-for-international-students/
+Not Found: /internships/oist-japanese-internship/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/finland-scholarships-without-ielts/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/highest-paid-canadian-scholarships/
+Not Found: /internships/fully-funded-scholarships-to-study-in-canada/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/study-in-spain-without-ielts/
+Not Found: /internships/internships-volunteer-opportunities/
+Not Found: /internships/study-in-usa-without-ielts-and-toefl/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/italy-government-scholarship/
+Not Found: /internships/canadas-pm-welcome-1-3-million-in-2022-24/
+Not Found: /internships/hungary-scholarships-without-ielts/
+Not Found: /internships/highest-paid-canadian-scholarships/
+Not Found: /internships/national-university-of-malaysia-scholarship/
+Not Found: /wp-class.php
+Not Found: /wordpress/wp-class.php
+Not Found: /site/wp-class.php
+Not Found: /wp-content/index.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp/wp-includes/wp-class.php
+Not Found: /wordpress/wp-includes/wp-class.php
+Not Found: /blog/wp-class.php
+Not Found: /internships/foreign-government-scholarships-2022/
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/georgia-government-scholarships-2022/
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /internships/cern-switzerland-internship-program/
+Not Found: /internships/scholarships-deadline-in-april/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/poland-scholarships-for-international-students/
+Not Found: /internships/study-and-work-in-canada-without-ielts/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/germany-scholarships-for-2022/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /static/media/uploads/post_images/scholarship/turkey-government-success-scholarship.jpg
+Not Found: /static/media/uploads/post_images/internship/local-international-summer-internship-in-turkey.jpg
+Not Found: /static/media/uploads/post_images/scholarship/sky-global-yunus-emre-summer-exchange-program.jpg
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/uk-universities-without-ielts-2/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/desy-summer-student-program/
+Not Found: /internships/rotary-peace-scholarship/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/europe-scholarships-for-international-students/
+Not Found: /internships/study-in-china-without-ielts/
+Not Found: /internships/australian-universities-without-ielts/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/government-of-romania-scholarships/
+Not Found: /internships/study-in-canada-scholarships/
+Not Found: /internships/scholarships-to-study-in-saudi-arabia/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/no-ielts-canadian-universities/
+Not Found: /internships/government-of-azerbaijan-scholarship/
+Not Found: /internships/big-scholarship-programs-without-ielts/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/adb-scholarship-program/
+Not Found: /internships/study-in-canadian-universities/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/universities-in-canada-without-ielts/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/spanish-scholarships-without-ielts/
+Not Found: /internships/fully-funded-european-scholarships/
+Not Found: /internships/motivation-letter-for-scholarship-application/
+Not Found: /internships/iu-scholarship/
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.txt
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /atom.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml.gz
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemaps.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap_index.xml
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Not Found: /internships/government-of-azerbaijan-scholarship/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/king-abdulaziz-scholarship/
+Not Found: /internships/italy-government-scholarship/
+Not Found: /internships/study-in-new-zealand-without-ielts/
+Not Found: /internships/turkish-universities-without-ielts/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/2022-2023-scholarships-for-canada/
+Not Found: /internships/oist-japanese-internship/
+Not Found: /internships/germany-scholarships-for-2022/
+Not Found: /internships/scholarships-in-spain-without-ielts/
+Not Found: /internships/australian-universities-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/king-abdullah-university-scholarship/
+Not Found: /internships/u-of-t-scholarships/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/scholarships-in-norway-without-ielts/
+Not Found: /internships/erasmus-mundus-joint-masters-scholarships/
+Not Found: /internships/usa-scholarships-for-international-students/
+Not Found: /internships/uk-universities-without-ielts/
+Not Found: /internships/universities-in-canada-without-ielts/
+Not Found: /internships/chulalongkorn-university-scholarship/
+Not Found: /internships/scholarships-in-france-for-international-students/
+Not Found: /internships/list-of-scholarships-without-ielts-2022/
+Not Found: /internships/qatar-scholarships-for-international-students/
+Not Found: /favicon.ico
+Not Found: /internships/italy-scholarships-for-international-students/
+Not Found: /internships/siit-scholarship-2020-in-thailand/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.txt
+Not Found: /internships/how-to-make-a-cv/
+Not Found: /internships/how-to-write-a-recommendation-letter/
+Not Found: /internships/internships-for-students/
+Not Found: /internships/qatar-scholarships-for-international-students/
+Not Found: /internships/what-is-an-english-proficiency-language-certificate/
+Not Found: /internships/new-zealand-scholarships-without-ielts/
+Not Found: /internships/scholarships-in-malta-without-ielts/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/scholarships-in-south-korea-for-international-students/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /atom.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap.xml.gz
+Not Found: /internships/top-scholarships-to-apply-in-canada/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemaps.xml
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /sitemap_index.xml
+Not Found: /internships/canada-universities-without-ielts/
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/canada-student-visa-without-ielts/
+Not Found: /internships/daad-scholarship-2020/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/scholarships-in-switzerland-without-ielts/
+Not Found: /internships/scholarships-in-australia-for-international-students/
+Not Found: /internships/korean-government-scholarships/
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /internships/un-volunteers-program-2021/
+Not Found: /internships/alberta-university-canada-scholarship/
+Not Found: /humans.txt
+Not Found: /ads.txt
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/best-fully-funded-scholarships-in-canada/
+Not Found: /internships/600-scholarships-in-25-universities-of-saudi-arabia/
+Not Found: /internships/study-in-europe-without-ielts/
+Not Found: /internships/georgia-government-scholarships-2022/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/scholarships-in-portugal-without-ielts/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/highest-paid-canadian-scholarships/
+Not Found: /internships/scholarships-in-hungary-without-ielts/
+Not Found: /internships/foreign-government-scholarships-2022/
+Not Found: /internships/georgia-government-scholarships-2022/
+Not Found: /infophp.php
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/usa-scholarships-without-gre/
+Not Found: /internships/study-in-canada-scholarships/
+Not Found: /internships/fully-funded-scholarships-in-europe/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/norway-scholarships-for-international-students/
+Not Found: /internships/universities-without-ielts/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/masters-scholarships-in-canada/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/poland-scholarships-for-international-students/
+Not Found: /internships/study-and-work-in-canada-without-ielts/
+Not Found: /internships/scholarships-in-austria-without-ielts/
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/joint-japan-world-bank-graduate-scholarship/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/un-internship/
+Not Found: /internships/mext-japanese-government-scholarship-2023/
+Not Found: /internships/chulalongkorn-university-scholarship/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/singapore-scholarships-without-ielts/
+Not Found: /internships/wfp-internship/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/unchr-internship/
+Not Found: /internships/helmut-schmidt-scholarship/
+Not Found: /internships/government-of-germany-scholarships/
+Not Found: /internships/malaysian-international-scholarship/
+Not Found: /internships/motivation-letter-for-scholarship-application/
+Not Found: /internships/italy-government-scholarship/
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Not Found: /internships/singapore-government-scholarship-2023/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/un-internship/
+Not Found: /internships/malaysian-international-scholarship/
+Not Found: /internships/what-is-an-english-proficiency-language-certificate/
+Not Found: /internships/internships-for-students/
+Not Found: /internships/fifa-2022-volunteer-registration/
+Not Found: /internships/national-university-of-malaysia-scholarship/
+Not Found: /internships/fifa-2022-volunteer-registration/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/internships-for-students/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/government-of-germany-scholarships/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/fulbright-scholarship-in-usa/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/imf-internship-program/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/bachelors-masters-phd-scholarships-in-canada-2022/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/study-in-canada-scholarships/
+Not Found: /internships/scholarships-in-south-korea-for-international-students/
+Not Found: /internships/study-in-china-without-ielts/
+Not Found: /internships/wfp-internship/
+Not Found: /internships/government-of-azerbaijan-scholarship/
+Not Found: /internships/rotary-peace-scholarship/
+Not Found: /internships/scholarships-to-study-in-saudi-arabia/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/spanish-scholarships-without-ielts/
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/schwarzman-scholarship-2021/
+Not Found: /internships/unchr-internship/
+Not Found: /internships/top-scholarships-in-canada/
+Not Found: /internships/british-council-free-online-courses/
+Not Found: /internships/80-scholarship-in-germany/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/scholarships-for-international-students-in-canada/
+Not Found: /internships/scholarships-in-germany-for-international-students/
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /internships/university-of-saskatchewan-canada-scholarships/
+Not Found: /.env
+Not Found: /internships/new-zealand-government-scholarship-2022/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/how-to-make-a-cv/
+Not Found: /internships/whatsapp-groups/
+Not Found: /internships/how-to-write-a-recommendation-letter/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/what-is-an-english-proficiency-language-certificate/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/qatar-scholarships-for-international-students/
+Not Found: /internships/fully-funded-canadian-scholarships/
+Not Found: /internships/who-internship-program/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/internships-in-canada/
+Not Found: /internships/australian-awards-scholarships/
+Not Found: /internships/usa-scholarships-without-gre/
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/scotland-government-scholarships/
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/usa-scholarships-without-ielts/
+Not Found: /internships/united-nations-internship/
+Not Found: /internships/study-in-usa-without-ielts-and-toefl/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /about/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/scholarships-in-france-for-international-students/
+Not Found: /internships/study-in-norway-free/
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/sky-global-yunus-emre-summer-exchange-program/
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/scholarships-in-sweden-without-ielts/
+Not Found: /internships/scholarships-in-belgium-without-ielts/
+Not Found: /internships/king-abdullah-university-scholarship/
+Not Found: /internships/scholarships-deadline-in-april/
+Not Found: /internships/fully-funded-south-korean-scholarships/
+Not Found: /static/media/uploads/post_images/scholarship/mext-japanese-government-scholarship-2023.jpg
+Not Found: /internships/scholarships-to-study-in-saudi-arabia/
+Not Found: /internships/study-in-china-without-ielts/
+Not Found: /internships/what-is-an-english-proficiency-language-certificate/
+Not Found: /internships/study-in-south-korea-without-ielts/
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/singapore-scholarships-without-ielts/
+Not Found: /internships/fully-funded-european-scholarships/
+Invalid HTTP_HOST header: 'www.scholaruni.com'. You may need to add 'www.scholaruni.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Not Found: /internships/undp-internship-2022/
+Not Found: /internships/fifa-2022-volunteer-registration/
+Not Found: /internships/high-acceptance-rate-universities-in-canada/
+Not Found: /internships/study-in-australia-without-ielts/
+Not Found: /internships/korean-government-scholarships/
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/un-internship/
+Not Found: /internships/study-in-canada-without-ielts-in-2022/
+Not Found: /internships/uk-universities-without-ielts/
+Not Found: /internships/unicef-internship-program-for-2022/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /static/media/uploads/post_images/scholarship/fully-funded-scholarships-in-australia.jpg
+Not Found: /static/media/uploads/post_images/scholarship/australian-universities-without-ielts.jpg
+OSError: LSAPI: Socket read/write error
+Not Found: /internships/turkish-universities-without-ielts/
+Not Found: /favicon.ico
+__________
+1653811116.900638
+__________
+64 https://opportunitiescorners.info/cern-administrative-student-program/
+1 page
+False
+False
+False
+True
+db connect
+no decompose found
+https://opportunitiescorners.info/internship-report/
+add
+no decompose found
+https://opportunitiescorners.info/tesla-internship/
+no decompose found
+https://opportunitiescorners.info/dubai-summer-internships/
+add
+__________
+1653811129.1625798
+__________
+1 page
+False
+False
+False
+False
+False
+False
+2 page
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/rhodes-scholarship-2023/
+add
+no decompose pound
+https://opportunitiescorners.info/mext-2023-japanese-scholarships-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/fully-funded-scholarships-in-usa/
+add
+no decompose pound
+https://opportunitiescorners.info/fully-funded-scholarships-in-german-universities/
+add
+https://opportunitiescorners.info/fully-funded-italian-scholarships-without-ielts/
+add
+https://opportunitiescorners.info/kuwait-scholarships-without-ielts/
+add
+Not Found: /internships/local-international-summer-internship-in-turkey/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/highest-paid-canadian-scholarships/
+Not Found: /internships/study-in-japan-without-ielts/
+Not Found: /internships/king-abdullah-university-scholarship/
+Not Found: /internships/netherlands-scholarships-for-international-students/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/study-in-german-universities-without-ielts/
+Not Found: /internships/helmut-schmidt-scholarship/
+Not Found: /internships/united-nations-volunteer-program/
+Not Found: /internships/georgia-government-scholarships-2022/
+Not Found: /internships/study-in-germany-without-ielts/
+Not Found: /internships/study-in-italy-without-ielts/
+Not Found: /internships/study-in-europe-without-ielts-2021/
+Not Found: /internships/crg-summer-internship-spain/
+Not Found: /internships/european-youth-volunteering-program/
+Not Found: /internships/cern-switzerland-internship-program/
+Not Found: /internships/university-of-ottawa-scholarships/
+Not Found: /internships/government-of-irish-scholarship/
+Not Found: /internships/scholarships-in-france-without-ielts/
+Not Found: /internships/study-in-canada-without-ielts/
+Not Found: /internships/list-of-scholarships-without-ielts-2022/
+Not Found: /internships/poland-scholarships-for-international-students/
+Not Found: /internships/government-of-netherlands-scholarships/
+Not Found: /internships/who-internship-programme/
+Not Found: /internships/korean-government-scholarships/
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 1428, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 127: 'endblock', expected 'endwith'. Did you forget to register or load this tag?
+Not Found: /favicon.ico
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 1428, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 127: 'endblock', expected 'endwith'. Did you forget to register or load this tag?
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 1428, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 127: 'endblock', expected 'endwith'. Did you forget to register or load this tag?
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 1428, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 127: 'endblock', expected 'endwith'. Did you forget to register or load this tag?
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 1428, in do_with
+    nodelist = parser.parse(('endwith',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 127: 'endblock', expected 'endwith'. Did you forget to register or load this tag?
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 298, in render
+    return nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 445, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 731, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'terms-by-page' not found. 'terms-by-page' is not a valid view function or pattern name.
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 217, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 298, in render
+    return nodelist.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/defaulttags.py", line 445, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/urls/resolvers.py", line 731, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'terms-by-page' not found. 'terms-by-page' is not a valid view function or pattern name.
+Not Found: /internships/whatsapp-groups/
+Not Found: /static/static/js/bootstrap.bundle.min.js
+Not Found: /favicon.ico
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 218, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'pagination' appears more than once
+Internal Server Error: /scholarships/
+Traceback (most recent call last):
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/scholaez/scholaruni_website/scholarship/views.py", line 126, in ScholarshipView
+    return render(request,'scholarship/scholarships.html',context=context)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/scholaez/virtualenv/scholaruni_website/3.8/lib/python3.8/site-packages/django/template/loader_tags.py", line 218, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'pagination' appears more than once
+Not Found: /internships/who-internship-programme/
+__________
+1653852667.7901707
+__________
+1 page
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/fully-funded-scholarships-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/no-ielts-canadian-universities-scholarships/
+add
+Not Found: /dfjhd
+Not Found: /dfjhd
+Not Found: /dfjhd
+OSError: LSAPI: Socket read/write error
+__________
+1653934982.1318052
+__________
+1 page
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/scholarships-for-international-students/
+add
+__________
+1653935072.263887
+__________
+67 https://opportunitiescorners.info/internship-report/
+1 page
+False
+True
+db connect
+https://opportunitiescorners.info/oist-internship-2020/
+__________
+1654018278.2555692
+__________
+68 https://opportunitiescorners.info/oist-internship-2020/
+1 page
+False
+True
+db connect
+no decompose found
+https://opportunitiescorners.info/list-of-upcoming-internships/
+__________
+1654018292.2975552
+__________
+1 page
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/scholarships-to-study-in-arab-countries/
+add
+__________
+1654022619.4524
+__________
+1 page
+True
+db connect
+__________
+1654022648.8411405
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+__________
+1654101355.8582618
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+__________
+1654101371.985792
+__________
+1 page
+False
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/scholarships-deadline-in-june-2022/
+add
+no decompose pound
+https://opportunitiescorners.info/american-university-emerging-global-leader-scholarship/
+add
+https://opportunitiescorners.info/helmut-schmidt-scholarship/
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+__________
+1654190876.5741632
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+__________
+1654190889.591087
+__________
+1 page
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/top-10-government-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/scholarships-call-for-canada/
+add
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+__________
+1654279382.2592285
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+__________
+1654279393.4964032
+__________
+1 page
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/kazakhstan-government-scholarships/
+add
+no decompose pound
+https://opportunitiescorners.info/british-chevening-scholarship/
+add
+__________
+1654279903.2341204
+__________
+1 page
+True
+db connect
+__________
+1654282123.2686238
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+__________
+1654282133.11684
+__________
+1 page
+True
+db connect
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+__________
+1654364331.961888
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+__________
+1654364352.9407265
+__________
+1 page
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/mbbs-scholarships-for-international-students/
+add
+no decompose pound
+https://opportunitiescorners.info/knight-hennessy-scholarship-program/
+add
+MBBS Scholarships for International Students 2023 Update Notifications from Scholaruni <p>The applications for the&nbsp;<strong>MBBS Scholarships for International Students</strong>&nbsp;for the class of&nbsp;<strong>2023</strong>&nbsp;are open. If you have a plan to do MBBS from abroad then MBBS Scholarships are open at many top universities. Many&nbsp;<strong><a href="https://scholaruni.com/internships/top-10-government-scholarships/">Government Scholarships</a></strong>&nbsp;also provide Scholarships to pursue MBBS. Medical Scholarships can be very expensive everyone knows. We have gathered a list of Scholarships for MBBS students. Start your online application and submit applications for the Fully Funded Medical Scholarships.</p>
+
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+__________
+1654504623.6682806
+__________
+69 https://opportunitiescorners.info/list-of-upcoming-internships/
+1 page
+True
+db connect
+__________
+1654504676.7951589
+__________
+1 page
+False
+False
+False
+False
+True
+db connect
+no decompose pound
+https://opportunitiescorners.info/ubd-scholarship-program/
+add
+no decompose pound
+https://opportunitiescorners.info/fully-funded-scholarships/
+no decompose pound
+https://opportunitiescorners.info/daad-scholarships-without-ielts/
+add
+no decompose pound
+https://opportunitiescorners.info/mba-scholarships-for-international-students/
+add

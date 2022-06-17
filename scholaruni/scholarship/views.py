@@ -6,9 +6,10 @@ from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView
 from django.core.paginator import Paginator
 from django.core.mail import send_mail
+import pprint
 
 # from scraping import oppsql, oppsql_intern
-from .models import Internship, Scholarships, Subscriptions, UpdatedSchol, UpdatedIntern
+from .models import Blog, Internship, Scholarships, Subscriptions, UpdatedSchol, UpdatedIntern
 from .forms import MessageForm, SubscriptionForm, EmailForm
 from django.contrib import messages
 from django.contrib import messages
@@ -20,6 +21,29 @@ from scraping.linkgen_intern import linkGenerationIntern
 from scraping.linkgen import linkGenerationScholarship 
 from scraping import oppsql_intern
 from scraping import oppsql
+
+import threading
+from threading import Thread
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+
+
+class EmailThread(threading.Thread):
+    def __init__(self, subject, template, title, content, image, recipient_list):
+        self.subject = subject
+        self.recipient_list = recipient_list
+        self.html_content = render_to_string(template, {'wellcome_msg':title, 'content':content, 'image':image})
+        self.text_content = strip_tags(self.html_content)
+        threading.Thread.__init__(self)
+
+    def run (self):
+        msg = EmailMultiAlternatives(self.subject, self.text_content, 'samsmusa@outlook.com', self.recipient_list, fail_silently=False)
+        msg.attach_alternative(self.html_content, "text/html")
+        msg.send()
+
+def send_html_mail(subject, template, title, content, image, recipient_list):
+    EmailThread(subject, template, title, content, image, recipient_list).start()
     
 
 # subscription form validation 
@@ -138,11 +162,38 @@ def InternshipView(request):
 
 
 def blogView(request):
-    return render(request, 'scholarship/blogPage.html', context={})
+    form = SubscriptionForm()
+    blog = Blog.objects.all()
+    blog_1 = blog[0]
+    # blog_2_3 = blog[1:3]
+    # blog_row = blog[3:]
+    # blog_b = blog[3]
+    subsc(request,'contact')
+
+
+    context = {
+        # 'blog_row':blog_row,
+        'blog_first':blog_1,
+        # 'blog_2_3':blog_2_3,
+        # 'blog_big':blog_b,
+        'form':form
+    }
+    return render(request,'scholarship/blogPage.html',context=context)
+    # return render(request, 'scholarship/blogPage.html', context={})
     
 
 def BlogDetails(request, slug):
-    return render(request, 'scholarship/blogDetails.html', context={})
+    # blog1 = Internship.objects.get()
+    # blog = blog1[1]
+    blog1 = Blog.objects.get(slug=slug)
+    form = SubscriptionForm()
+    subsc(request)
+    context = {
+        'blog':blog1,
+        'form':form
+    }
+    return render(request, 'scholarship/blogDetails.html', context=context)
+    # return render(request, 'scholarship/blogDetails.html', context={})
     
 
 
@@ -155,7 +206,8 @@ def ScholarshipDetailView(request,slug):
     subsc(request)
     context = {
         'object':scholarship,
-        'form':form
+        'form':form,
+        'content':'scholarship'
     }
     return render(request, 'scholarship/blog.html', context=context)
     
@@ -172,25 +224,46 @@ def InternshipDetailView(request,slug):
     return render(request, 'scholarship/blog.html', context=context)
     
 
+def divide_chunks(l, n):
+      
+    # looping till length l
+    for i in range(0, len(l), n): 
+        yield l[i:i + n]
 
 @login_required(login_url='/admin')
 def dashboard(request):
     # subscriptions = Subscriptions.objects.all()
     recpient = list(Subscriptions.objects.values_list('email', flat=True) )
+
+
     
     if request.method == 'POST':
+        # print(request.POST)
         try:
-            if list(request.POST.items())[2][0]=='body':
-                form = EmailForm(request.POST)
-                subject = request.POST['subject']
-                body = request.POST['body']
-                send_mail(
-                    subject,
-                    body,
-                    'info@scholaruni.com',
-                    ['samsmusa@outlook.com'],
-                    fail_silently=True
-                )
+            # print(list(request.POST.items()))
+            if list(request.POST.items())[2][0]=='title':
+                print(request.POST)
+                print(request.POST.getlist('emailList'))
+                # form = EmailForm(request.POST)
+                # title = request.POST['title']
+                # subject = request.POST['subject']
+                # content = request.POST['body']
+                # print(title, subject, content)
+                # send_html_mail(
+                #     subject=subject,
+                #     template='emailPersonal.html',
+                #     title=title,
+                #     content=content,
+                #     image='https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                #     recipient_list=recpient
+                # )
+                # send_mail(
+                #     subject,
+                #     body,
+                #     'info@scholaruni.com',
+                #     ['samsmusa@outlook.com'],
+                #     fail_silently=True
+                # )
         except:
             pass
         
@@ -212,12 +285,15 @@ def dashboard(request):
             pass
     form = EmailForm()
     subscriptions = Subscriptions.objects.all()
+    subscriptionsList = divide_chunks(subscriptions,2)
+    # pprint(subscriptionsList)
     updateInternPost = UpdatedIntern.objects.all()
     updateScholPost = UpdatedSchol.objects.all()
     context = {
         'updateInternPost':updateInternPost,
         'updateScholPost':updateScholPost,
-        'subscriptions': subscriptions,
+        'subscriptions': subscriptionsList,
+        # 'subscriptions': subscriptions,
         'form':form,
     }
     return render(request, 'scholarship/dashboard.html', context=context)

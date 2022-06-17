@@ -11,8 +11,39 @@ from django.contrib import messages
 from django.contrib import messages
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
 from itertools import chain
 import random
+from scraping.linkgen_intern import linkGenerationIntern 
+from scraping.linkgen import linkGenerationScholarship 
+from scraping import oppsql_intern
+from scraping import oppsql
+
+
+import threading
+from threading import Thread
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+
+
+class EmailThread(threading.Thread):
+    def __init__(self, subject, template, title, content, image, recipient_list):
+        self.subject = subject
+        self.recipient_list = recipient_list
+        self.html_content = render_to_string(template, {'wellcome_msg':title, 'content':content, 'image':image})
+        self.text_content = strip_tags(self.html_content)
+        threading.Thread.__init__(self)
+
+    def run (self):
+        msg = EmailMultiAlternatives(self.subject, self.text_content, 'info@scholaruni.com', self.recipient_list)
+        msg.attach_alternative(self.html_content, "text/html")
+        msg.send()
+
+def send_html_mail(subject, template, title, content, image, recipient_list):
+    EmailThread(subject, template, title, content, image, recipient_list).start()
+    
+
     
 
 # subscription form validation 
@@ -42,10 +73,14 @@ def search(request):
     if request.GET.get('search_query'):
         search_query = request.GET.get('search_query')
     subsc(request)
-    result_list = list(chain(Scholarships.objects.filter(title__icontains=search_query), Internship.objects.filter(title__icontains=search_query)))
-    random.shuffle(result_list)
+    # result_list = list(chain(Scholarships.objects.filter(title__icontains=search_query), Internship.objects.filter(title__icontains=search_query)))
+    internship = Internship.objects.filter(title__icontains=search_query)
+    scholarship = Scholarships.objects.filter(title__icontains=search_query)
+    # random.shuffle(internship)
+    # random.shuffle(scholarship)
     context = {
-        'object':result_list,
+        'internship':internship,
+        'scholarship':scholarship,
         'form':form,
         "query":search_query
 
@@ -55,8 +90,8 @@ def search(request):
 # home view 
 def HomeView(request):
     form = SubscriptionForm()
-    scholarship = Scholarships.objects.all()
-    internship = Internship.objects.all()
+    scholarship = Scholarships.objects.all()[:9]
+    internship = Internship.objects.all()[:9]
     first_row_schol = scholarship[:3]
     first_row_intern = internship[:3]
     scholarship_row = scholarship[3:9]
@@ -189,27 +224,42 @@ def dashboard(request):
     recpient = list(Subscriptions.objects.values_list('email', flat=True) )
     
     if request.method == 'POST':
-        if list(request.POST.items())[2][0]=='body':
-            form = EmailForm(request.POST)
-            subject = request.POST['subject']
-            body = request.POST['body']
-            send_mail(
-                subject,
-                body,
-                'info@scholaruni.com',
-                recpient,
-                fail_silently=True
-            )
-            
-        # if list(request.POST.items())[1][0] == 'intern':
-        #     linkGenerationIntern()
-        #     total = oppsql_intern.insertData()
-        #     UpdatedIntern.objects.create(addPost=total) 
-            
-        # if list(request.POST.items())[1][0] == 'schol':
-        #     linkGenerationScholarship()
-        #     total = oppsql.insertDataScholarship()
-        #     UpdatedSchol.objects.create(addPost=total) 
+        try:
+            if list(request.POST.items())[1][0]=='title':
+                form = EmailForm(request.POST)
+                title = request.POST['title']
+                subject = request.POST['subject']
+                content = request.POST['body']
+                print(title, subject, content)
+                send_html_mail(
+                    subject=subject,
+                    template='emailPersonal.html',
+                    title=title,
+                    content=content,
+                    image='https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+                    recipient_list=recpient
+                )
+        except:
+            pass
+        
+        try:
+            print(list(request.POST.items()))
+            if list(request.POST.items())[1][0] == 'intern':
+                print('intern')
+                linkGenerationIntern()
+                total = oppsql_intern.insertData()
+                UpdatedIntern.objects.create(addPost=total) 
+                
+            if list(request.POST.items())[1][0] == 'schol':
+                print('schol')
+                linkGenerationScholarship()
+                print(1)
+                total = oppsql.insertDataScholarship()
+                print(2)
+                UpdatedSchol.objects.create(addPost=total) 
+                print(3)
+        except:
+            pass
     form = EmailForm()
     subscriptions = Subscriptions.objects.all()
     updateInternPost = UpdatedIntern.objects.all()

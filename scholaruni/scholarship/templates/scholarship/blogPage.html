@@ -36,10 +36,13 @@
                              style="height:360px;"
                              alt="...">
                         <div class="card-img-overlay">
-                            <h5 class="card-title"><a href="#">Card title</a></h5>
-                            <p class="card-text border-none">
-                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
+                            <h5 class="card-title fw-bolder fs-4 text-white"><a href="{% url 'blogDetials' blog_first.slug %}">{{blog_first.title}}</a></h5>
+                            <!-- <p class="card-text border-none ">
+                                {{blog_first.post_content | safe}}
+                            </p> -->
+                            <article class="article">
+                                {{blog_first.post_content | safe}}
+                            </article>
                             <p class="card-text">Last updated 3 mins ago</p>
                         </div>
                     </div>
