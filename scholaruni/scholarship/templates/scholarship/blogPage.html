@@ -10,6 +10,11 @@
     {% endblock navbar %}
     {% if messages %}
         {% for message in messages %}
+
+        
+        
+
+
             <div class="alert alert-{{ message.extra_tags }} text-center alert-dismissible fade show w-50 position-absolute top-0 start-50 translate-middle-x sticky-top"
                  role="alert">
                 <strong>{{ message }}</strong>
@@ -21,61 +26,128 @@
         {% endfor %}
     {% endif %}
     {% block content %}
-        <section class="container">
+        <!-- <section class="container"> -->
             <div class="alert  mt-3"
                  role="alert"
                  style="background-color:#F4AFA0;
                         color:black;">
                 A simple primary alert—check it out!
             </div>
-            <div class="row ">
-                <div class="col-6 ">
-                    <div class="card bg-dark text-white border-0 h-100">
-                        <img src="https://images.unsplash.com/photo-1653922233367-b99f1b9a8af1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-                             class="card-img"
-                             style="height:360px;"
-                             alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title fw-bolder fs-4 text-white"><a href="{% url 'blogDetials' blog_first.slug %}">{{blog_first.title}}</a></h5>
-                            <!-- <p class="card-text border-none ">
-                                {{blog_first.post_content | safe}}
-                            </p> -->
-                            <article class="article">
-                                {{blog_first.post_content | safe}}
-                            </article>
-                            <p class="card-text">Last updated 3 mins ago</p>
+           
+
+
+
+            <div class="main-banner" id="top">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="left-content">
+                        <div class="thumb">
+                          <div class="inner-content">
+                            <h4>We Are Hexashop</h4>
+                            <span>Awesome, clean &amp; creative HTML5 Template</span>
+                            <div class="main-border-button">
+                              <a href="#">Purchase Now!</a>
+                            </div>
+                          </div>
+                          <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                         </div>
+                      </div>
                     </div>
+                    <div class="col-lg-6">
+                      <div class="right-content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="right-first-image">
+                              <div class="thumb">
+                                <div class="inner-content">
+                                  <h4>Women</h4>
+                                  <span>Best Clothes For Women</span>
+                                </div>
+                                <div class="hover-content">
+                                  <div class="inner">
+                                    <h4>Women</h4>
+                                    <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                    <div class="main-border-button">
+                                      <a href="#">Discover More</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="right-first-image">
+                              <div class="thumb">
+                                <div class="inner-content">
+                                  <h4>Men</h4>
+                                  <span>Best Clothes For Men</span>
+                                </div>
+                                <div class="hover-content">
+                                  <div class="inner">
+                                    <h4>Men</h4>
+                                    <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                    <div class="main-border-button">
+                                      <a href="#">Discover More</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="right-first-image">
+                              <div class="thumb">
+                                <div class="inner-content">
+                                  <h4>Kids</h4>
+                                  <span>Best Clothes For Kids</span>
+                                </div>
+                                <div class="hover-content">
+                                  <div class="inner">
+                                    <h4>Kids</h4>
+                                    <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                    <div class="main-border-button">
+                                      <a href="#">Discover More</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="right-first-image">
+                              <div class="thumb">
+                                <div class="inner-content">
+                                  <h4>Accessories</h4>
+                                  <span>Best Trend Accessories</span>
+                                </div>
+                                <div class="hover-content">
+                                  <div class="inner">
+                                    <h4>Accessories</h4>
+                                    <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                    <div class="main-border-button">
+                                      <a href="#">Discover More</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 ">
-                    <div class="mb-1 card bg-dark text-white border-0">
-                        <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                             class="card-img"
-                             style="height:180px;"
-                             alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title"><a href="#">Card title</a></h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="mt-1 card bg-dark text-white border-0">
-                        <img src="https://images.unsplash.com/photo-1653559099358-6516090cc62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                             class="card-img"
-                             style="height:180px;"
-                             alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title"><a href="#">Card title</a></h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+
+
+
+
+
             <div class="alert  mt-3"
                  role="alert"
                  style="background-color:#F4AFA0;
@@ -163,7 +235,9 @@
                             <p>
                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                             </p>
-                            <span class="fs-5 font-monospace text-decoration-underline py-2"><a href="#">Learn More</a></span>
+                            <div class="main-border-button">
+                                <a href="#">Discover More</a>
+                              </div>
                         </div>
                     </div>
 
@@ -288,7 +362,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        <!-- </section> -->
     {% endblock content %}
 {% endblock main %}
 {% block footer %}

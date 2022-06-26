@@ -2,21 +2,32 @@
  <!-- footer  -->
  {% include 'termscond.html' %}
  <footer class="mt-auto bg-light footer bg-color">
-  <div class="d-flex flex-column bd-highlight mt-2 text-center">
+  <div class="d-flex flex-column bd-highlight mt-2 ">
       <div class="d-flex flex-row bd-highlight justify-content-around">
           <div>
-              <p class="fs-6 text-white mb-0">Links</p>
-              <ul class="list-unstyled footer-list">
+              <p class="fs-4 text-white mb-0 ">Links</p>
+              <ul class="list-unstyled footer-list text-left">
                   <li><a class="text-none text-dark" href="{% url 'home' %}">Home</a></li>
                   <li><a class="text-none text-dark" href="{% url 'about' %}">About us</a></li>
                   <li><a class="text-none text-dark" href="{% url 'contact' %}">Contact us</a></li>
+                  
               </ul>
           </div>
           <div>
-              <p class="fs-6 text-white mb-0">Popular Links</p>
-              <ul class="list-unstyled footer-list">
-                  <li><a class="text-none text-dark" href="{% url 'scholarships' %}">Scholarship</a></li>
-                  <li><a class="text-none text-dark" href="{% url 'internships' %}">Internship</a></li>
+              <p class="fs-4 text-white mb-0 ">More</p>
+              <ul class="list-unstyled footer-list text-left">
+                <li><a class="text-none text-bold text-dark text-left" href="{% url 'internships' %}">Privecy-policy</a></li>
+                <li><a class="text-none text-dark text-left" href="{% url 'internships' %}">Terms and Conditions</a></li>
+                <li><a class="text-none text-dark text-left" href="{% url 'internships' %}">Disclaimer</a></li>
+                  
+              </ul>
+          </div>
+          <div>
+              <p class="fs-4 text-white mb-0 ">Popular Links</p>
+              <ul class="list-unstyled footer-list text-left">
+                  <li><a class="text-none text-dark text-left" href="{% url 'scholarships' %}">Scholarship</a></li>
+                  <li><a class="text-none text-dark text-left" href="{% url 'internships' %}">Internship</a></li>
+                  
               </ul>
           </div>
           <div>

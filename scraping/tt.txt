@@ -1,0 +1,72 @@
+<div class="table-responsive-sm table-responsive-md">
+<table class="table table-hover table-borderless">
+<tr>
+<td class="text-muted text-right" max-width="40%">
+<i class="las la-calendar-day"></i>
+                                                Deadline:
+                                            </td>
+<th scope="row">
+<a href="https://scholarshipunion.com/monthly-scholarships/october-2022">1 October 2022</a>
+</th>
+</tr>
+<tr>
+<td class="text-muted text-right" max-width="40%">
+<i class="las la-globe"></i>
+                                                Study in:
+                                            </td>
+<th scope="row">
+<a href="/countries/united-states-of-america-228">
+                                                        United States of America
+                                                    </a>
+</th>
+</tr>
+<tr>
+<td class="text-muted text-right" max-width="40%">
+<i class="las la-university"></i>
+                                                Provider:
+                                            </td>
+<th scope="row">
+<a class="" href="/institutes/john-carroll-university">
+                                                    John Carroll University
+                                                </a>
+</th>
+</tr>
+<tr>
+<td class="text-muted text-right" max-width="40%">
+<i class="las la-folder"></i>
+                                                Study Level:
+                                            </td>
+<th scope="row">
+<a class="" href="/study-level/bachelor-4">
+                                                        Bachelor
+                                                    </a>
+                                                                                                            ,
+                                                                                                                                                        <a class="" href="/study-level/undergraduate-8">
+                                                        Undergraduate
+                                                    </a>
+</th>
+</tr>
+<tr>
+<td class="text-muted text-right" max-width="40%">
+<i class="las la-book"></i>
+                                                Subjets:
+                                            </td>
+<th scope="row">
+<a class="" href="/subjects/subjects-offered-by-the-university-2">
+                                                        Subjects offered by the university
+                                                    </a>
+</th>
+</tr>
+<tr>
+<td class="text-muted text-right" max-width="40%">
+<i class="las la-hand-holding-usd"></i>
+                                                Funding Types:
+                                            </td>
+<th scope="row">
+<a class="" href="/scholarships-types/partial-scholarships-3">
+                                                        Partial Scholarships
+                                                    </a>
+</th>
+</tr>
+</table>
+</div>

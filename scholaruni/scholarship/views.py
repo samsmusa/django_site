@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView
 from django.core.paginator import Paginator
-from django.core.mail import send_mail
+from django.core.mail import send_mail, send_mass_mail
 import pprint
 
 # from scraping import oppsql, oppsql_intern
@@ -38,12 +38,12 @@ class EmailThread(threading.Thread):
         threading.Thread.__init__(self)
 
     def run (self):
-        msg = EmailMultiAlternatives(self.subject, self.text_content, 'samsmusa@outlook.com', self.recipient_list, fail_silently=False)
-        msg.attach_alternative(self.html_content, "text/html")
-        msg.send()
+        for email in self.recipient_list:
+            msg = EmailMultiAlternatives(self.subject, self.text_content, 'samsmusa@outlook.com', [email])
+            msg.attach_alternative(self.html_content, "text/html")
+            msg.send()
 
-def send_html_mail(subject, template, title, content, image, recipient_list):
-    EmailThread(subject, template, title, content, image, recipient_list).start()
+
     
 
 # subscription form validation 
@@ -79,17 +79,23 @@ def search(request):
 # home view 
 def HomeView(request):
     form = SubscriptionForm()
-    scholarship = Scholarships.objects.all()
+    # scholarship = Scholarships.objects.all() 
     internship = Internship.objects.all()
+    scholarship = Scholarships.objects.values(
+        "title", "slug", "country", "star", "publish_date"
+    )
+    internship = Internship.objects.values(
+        "title", "slug", "country", "star", "publish_date"
+    )
     first_row_schol = scholarship[:3]
     first_row_intern = internship[:3]
     scholarship_row = scholarship[3:9]
     internship_row = internship[3:9]
     # schol_country = 
-
+    print(first_row_intern)
     # ploting
     scholar_data = [
-        {"countries":x.country, "Scholarship":1} if (x.country!='') else {"countries":'others', "Scholarship":1} for x in scholarship
+        {"countries":x["country"], "Scholarship":1} if ( x["country"] != '') else {"countries":'others', "Scholarship":1} for x in scholarship
     ]
     scholar_df = pd.DataFrame(scholar_data)
     scholar_df2 = scholar_df.groupby('countries').sum()
@@ -99,7 +105,8 @@ def HomeView(request):
 
 
     intern_data = [
-        {"countries":x.country, "Internship":1} if (x.country!='') else {"countries":'others', "Internship":1} for x in internship
+        {"countries":x["country"] , "Internship":1} 
+        if ( x["country"] != '') else {"countries":'others', "Internship":1} for x in internship
     ]
     intern_df = pd.DataFrame(intern_data)
     intern_df2 = intern_df.groupby('countries').sum()
@@ -230,10 +237,14 @@ def divide_chunks(l, n):
     for i in range(0, len(l), n): 
         yield l[i:i + n]
 
+def send_html_mail(subject, template, title, content, image, recipient_list):
+    EmailThread(subject, template, title, content, image, recipient_list).start()
+
+
 @login_required(login_url='/admin')
 def dashboard(request):
     # subscriptions = Subscriptions.objects.all()
-    recpient = list(Subscriptions.objects.values_list('email', flat=True) )
+    # recpient = list(Subscriptions.objects.values_list('email', flat=True) )
 
 
     
@@ -245,23 +256,29 @@ def dashboard(request):
                 print(request.POST)
                 print(request.POST.getlist('emailList'))
                 # form = EmailForm(request.POST)
-                # title = request.POST['title']
-                # subject = request.POST['subject']
-                # content = request.POST['body']
-                # print(title, subject, content)
-                # send_html_mail(
-                #     subject=subject,
-                #     template='emailPersonal.html',
-                #     title=title,
-                #     content=content,
-                #     image='https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-                #     recipient_list=recpient
-                # )
-                # send_mail(
-                #     subject,
-                #     body,
-                #     'info@scholaruni.com',
-                #     ['samsmusa@outlook.com'],
+                title = request.POST['title']
+                subject = request.POST['subject']
+                content = request.POST['body']
+                print(title, subject, content)
+
+                subject = 'test subject'
+                message = 'test message'
+                from_email = 'samsmusa@outlook.com'
+                recipient_list = ['a@a.com', 'b@b.com', 'c@c.com']
+
+                messages = [(subject,'emailPersonal.html',title,content,'https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',[recipient]) for recipient in request.POST.getlist('emailList')]
+
+                # send_mass_mail(messages)
+                send_html_mail(
+                    subject,'emailPersonal.html',title,content,'https://images.unsplash.com/photo-1562585195-97aff4b3848c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',['samsmusa.nstu@gmail.com',"barineawesome@gmail.com"]
+                )
+                # messages = [(subject, message, from_email, [recipient]) for recipient in ['samsmusa.nstu@gmail.com',"barineawesome@gmail.com"]]
+                # send_mass_mail(messages)
+                # # send_mail(
+                #     'hello',
+                #     'mello',
+                #     'samsmusa@outlook.com',
+                #     ['samsmusa.nstu@gmail.com'],
                 #     fail_silently=True
                 # )
         except:
@@ -285,6 +302,8 @@ def dashboard(request):
             pass
     form = EmailForm()
     subscriptions = Subscriptions.objects.all()
+    total_email = len(subscriptions)
+    print(total_email)
     subscriptionsList = divide_chunks(subscriptions,2)
     # pprint(subscriptionsList)
     updateInternPost = UpdatedIntern.objects.all()
@@ -293,6 +312,7 @@ def dashboard(request):
         'updateInternPost':updateInternPost,
         'updateScholPost':updateScholPost,
         'subscriptions': subscriptionsList,
+        'total': total_email,
         # 'subscriptions': subscriptions,
         'form':form,
     }

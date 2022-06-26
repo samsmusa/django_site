@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'scholarship.apps.ScholarshipConfig',
     'fontawesomefree',
     'ckeditor',
+    "debug_toolbar",
 ]
 SITE_ID = 1 
 MIDDLEWARE = [
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = 'scholaruni.urls'
@@ -84,6 +86,11 @@ WSGI_APPLICATION = 'scholaruni.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+INTERNAL_IPS = [
+    # ...
+    "127.0.0.1",
+    # ...
+]
 
 DATABASES = {
     'default': {
